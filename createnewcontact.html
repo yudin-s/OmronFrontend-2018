@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/traficcopworkflow.css" rel="stylesheet">
+    <link href="css/createnewcontact.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list aside_list-small">
+          <div class="aside_list_search">
+            <form>
+              <button></button>
+              <input type="text" placeholder="Search">
+            </form><a class="aside_list_search-add" href="#"></a>
+          </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-f"></i><span class="title">Clients</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-g"></i><span class="title">Approved files</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-x"></i><span class="title">Files in queue</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-i"></i><span class="title">Job status</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-k"></i><span class="title">Send for approval</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-q"></i><span class="title">Dashboard</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-y"></i><span class="title">Contacts</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-z"></i><span class="title">Items</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-A"></i><span class="title">Sales Orders</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-B"></i><span class="title">Packages</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-C"></i><span class="title">Invoices</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-D"></i><span class="title">Purchase Orders</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-E"></i><span class="title">Bills</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-F"></i><span class="title">Integration</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-G"></i><span class="title">Reports</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-H"></i><span class="title">Job Schedule</span></div>
+                    </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="min-height contentflex">
+          <div class="newcontact content content-rp">
+            <div class="contentflex contentflexcenter">
+              <h1>New Contact</h1><span class="rightpanel-opener"><i class="ssgfont ssgfont-I"></i></span>
+            </div>
+            <div class="newcontact_form">
+              <form>
+                <div class="newcontact_form-block contentflex contentflexcenter newcontact_form_bb newcontact_form-block-first">
+                  <div class="newcontact_form_photo">
+                    <label>
+                      <input type="file">
+                      <div class="newcontact_form-photo" style="background-image: url(img/user4.jpg)"></div><span>Upload photo</span>
+                    </label>
+                  </div>
+                  <div class="newcontact_form_salutation">
+                    <div class="newcontact_form_froup">
+                      <label class="newcontact_form-title">Salutation</label>
+                      <select class="newcontact_form-select">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Miss</option>
+                        <option>Ms</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="newcontact_form_name">
+                    <div class="newcontact_form_froup">
+                      <label class="newcontact_form-title">First Name</label>
+                      <input type="text" value="Chris">
+                    </div>
+                  </div>
+                  <div class="newcontact_form_name">
+                    <div class="newcontact_form_froup">
+                      <label class="newcontact_form-title">Last Name</label>
+                      <input type="text" value="Toomey">
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-block">
+                  <div class="newcontact_form_row-title">Company</div>
+                  <div class="newcontact_form_row">
+                    <div class="contentflex contentflexcenter newcontact_form_row-blockmobile">
+                      <div class="newcontact_form_froup newcontact_form_froup-w-img maxwidth920">
+                        <label class="newcontact_form-title">Company Name</label>
+                        <div class="newcontact_form_froup-img" style="background-image: url(img/omron.png)"></div>
+                        <input type="text" value="Omron">
+                      </div>
+                      <label class="newcontact_form_uploadimage">
+                        <input type="file"><span class="button button_fiolet button_fiolet_shadow">Upload Image</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="newcontact_form_row">
+                    <div class="newcontact_form_froup newcontact_form_froup-w-img maxwidth920">
+                      <label class="newcontact_form-title">Sales Represantative</label>
+                      <div class="newcontact_form_froup-img" style="background-image: url(img/user5.jpg)"></div>
+                      <select class="newcontact_form-select">
+                        <option>Maestro</option>
+                        <option>Jonas Hanlin</option>
+                        <option>Jonas Hanlin2</option>
+                        <option>Jonas Hanlin3</option>
+                        <option>Jonas Hanlin4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="newcontact_form_row">
+                    <div class="newcontact_form_froup maxwidth920">
+                      <label class="newcontact_form-title">Contact E-mail</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-block">
+                  <div class="newcontact_form_row-title">Phone and website</div>
+                  <div class="newcontact_form_row">
+                    <div class="contentflex contentflexcenter maxwidth920 contentflex-nombile">
+                      <div class="newcontact_form_froup maxwidthfull">
+                        <label class="newcontact_form-title">Work Phone</label>
+                        <input type="tel">
+                      </div>
+                      <div class="newcontact_form_froup maxwidthfull">
+                        <label class="newcontact_form-title">Mobile</label>
+                        <input type="tel">
+                      </div><a class="newcontact_form_froup-addfields" href="#">Add fields</a>
+                    </div>
+                  </div>
+                  <div class="newcontact_form_row">
+                    <div class="contentflex contentflexcenter maxwidth920">
+                      <div class="newcontact_form_froup maxwidthfull">
+                        <label class="newcontact_form-title">Website</label>
+                        <input type="text" value="deltatau.com">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-block newcontact_form_bb">
+                  <div class="newcontact_form_row-title">Contact Type</div>
+                  <div class="newcontact_form_row">
+                    <div class="contentflex contentflexcenter maxwidth920">
+                      <label class="radiobutton">
+                        <input type="radio" name="radio1"><span>Customer</span>
+                      </label>
+                      <label class="radiobutton">
+                        <input type="radio" name="radio1"><span>Vendor</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-block">
+                  <div class="newcontact_form_row-title">Customer Service Represenative</div>
+                  <div class="newcontact_form_row">
+                    <div class="newcontact_form_froup newcontact_form_froup-w-img maxwidth920">
+                      <label class="newcontact_form-title">CSR</label>
+                      <div class="newcontact_form_froup-img" style="background-image: url(img/user6.jpg)"></div>
+                      <select class="newcontact_form-select">
+                        <option>Jannet Morney</option>
+                        <option>Christopher Furera</option>
+                        <option>Christopher Furera 2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-block">
+                  <div class="newcontact_form-tabs nav"><a class="newcontact_form-tab" href="#payment" data-toggle="tab">Tax & Payment Details</a><a class="newcontact_form-tab active" href="#address" data-toggle="tab">Billing Address</a><a class="newcontact_form-tab" href="#">Shipping Address</a><a class="newcontact_form-tab" href="#">Reporting Tags</a><a class="newcontact_form-tab" href="#">Notes</a></div>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane fade" id="payment">
+                    <div class="newcontact_form-block">
+                      <div class="newcontact_form_row-title">Tax Preference</div>
+                      <div class="newcontact_form_row">
+                        <div class="contentflex contentflexcenter maxwidth920">
+                          <label class="radiobutton">
+                            <input type="radio" name="radio2"><span>Taxable</span>
+                          </label>
+                          <label class="radiobutton">
+                            <input type="radio" name="radio2"><span>Tax Exempt</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="newcontact_form-block">
+                      <div class="newcontact_form_row-title">Tax Rate</div>
+                      <div class="newcontact_form_row">
+                        <div class="newcontact_form_froup maxwidthfull">
+                          <label class="newcontact_form-title">Select a Tax</label>
+                          <select class="newcontact_form-select">
+                            <option>California State Tax (10.00%)</option>
+                            <option>California State Tax (25.00%)</option>
+                            <option>California State Tax (50.00%)</option>
+                            <option>California State Tax (100.00%)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="newcontact_form_row">
+                        <div class="newcontact_form_froup maxwidthfull">
+                          <label class="newcontact_form-title">Payment Form</label>
+                          <select class="newcontact_form-select">
+                            <option>Credit Card</option>
+                            <option>Credit Card2</option>
+                            <option>Credit Card3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="newcontact_form_row">
+                        <div class="newcontact_form_froup maxwidthfull">
+                          <label class="newcontact_form-title">Payment Terms</label>
+                          <select class="newcontact_form-select">
+                            <option>C.O.D</option>
+                            <option>C.O.D 2</option>
+                            <option>C.O.D 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="newcontact_form-block">
+                      <div class="newcontact_form_row-title">Social Media</div>
+                      <div class="newcontact_form_row">
+                        <div class="contentflex contentflexcenter contentflex-nombile newcontact_form-social">
+                          <div class="newcontact_form_froup maxwidthfull">
+                            <label class="newcontact_form-title">Linkedin</label>
+                            <input class="newcontact_form-social-input" type="text" style="background-image: url(img/linkedin.png)">
+                          </div>
+                          <div class="newcontact_form_froup maxwidthfull">
+                            <label class="newcontact_form-title">Facebook</label>
+                            <input class="newcontact_form-social-input" type="text" style="background-image: url(img/facebook.png)">
+                          </div><a class="newcontact_form_froup-addfields" href="#">Add Social Media</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade active show" id="address">
+                    <div class="newcontact_adress_list">
+                      <div class="newcontact_address_item newcontact_address_item-add"><a href="#"></a></div>
+                      <div class="newcontact_address_item"><span class="newcontact_address_item-menuopener"><i class="ssgfont ssgfont-J"></i></span>
+                        <div class="newcontact_address_item-name">Address #1</div>
+                        <p class="big">23600 Strathern Street West Hills, CA 90232</p>
+                      </div>
+                      <div class="newcontact_address_item"><span class="newcontact_address_item-menuopener"><i class="ssgfont ssgfont-J"></i></span>
+                        <div class="newcontact_address_item-name">Address #2</div>
+                        <p class="big">12411 Pacific Avenue Los Angeles CA, 90066 Unit #105</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="newcontact_form-buttons">
+                  <button class="button button_big button_fiolet">Save</button><a class="button button_big button_transparent" href="#">Cancel</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="workflow_panel rightpanel">
+            <div class="workflow_panel_buttons"><a class="button button_low button_transparent" href="#">Upload with Gmail</a></div>
+            <div class="workflow_panel_group"><a href="#">Organization Profile</a><a href="#">Users & Roles</a><a href="#">Warehouses</a></div>
+            <div class="workflow_panel_group"><a href="#">Preferences</a></div>
+            <div class="workflow_panel_group"><a href="#">Currencies</a><a href="#">Taxes</a><a href="#">Price List</a><a href="#">Templates</a><a href="#">Email Templates</a><a href="#">Automation</a></div>
+            <div class="workflow_panel_group"><a href="#">Integrations</a></div>
+            <div class="workflow_panel_group"><a href="#">Data Backup</a><a href="#">Subscription</a><a href="#">Send for Approval</a></div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

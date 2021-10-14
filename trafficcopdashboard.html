@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/trafficdashboard.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list">
+          <div class="aside_list-group active">
+            <div class="aside_list-title"><i class="ssgfont ssgfont-q"></i><span class="title">Home</span></div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-2"></i><span class="title">Product</span><span class="aside_list-number">30</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-0"></i><a href="#">Manuals</a></li>
+                <li><i class="omronfont omronfont-7"></i><a href="#">CAD</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-3"></i><span class="title">Application</span><span class="aside_list-number">24</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-8"></i><a href="#">Notes</a></li>
+                <li><i class="omronfont omronfont-5"></i><a href="#">Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-1"></i><span class="title">Training Material</span><span class="aside_list-number">6</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="ssgfont ssgfont-f"></i><a href="#">Beginners</a></li>
+                <li><i class="omronfont omronfont-6"></i><a href="#">Advansed</a></li>
+                <li></li>
+                <li><i class="ssgfont ssgfont-i"></i><a href="#">Tutorials</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-n"></i><span class="title">R & D</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-4"></i><a href="#">Software</a></li>
+                <li><i class="omronfont omronfont-9"></i><a href="#">Firmware</a></li>
+                <li><i class="omronfont omronfont-a"></i><a href="#">Hardware</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="trafficdashboard_page min-height">
+          <div class="trafficdashboard_main">
+            <div class="trafficdashboard_top"><a class="breadcrumbs-mobileprev" href="#"></a>
+              <h1>Document Status Dashboard</h1>
+              <div class="trafficdashboard_top_buttons">
+                <div class="trafficdashboard_top-buttons">
+                  <ul>
+                    <li class="active"><a href="#">1 week</a></li>
+                    <li><a href="#">1 month</a></li>
+                    <li><a href="#">3 month</a></li>
+                    <li><a href="#">6 month</a></li>
+                    <li><a href="#">1 year</a></li>
+                  </ul>
+                </div><a class="trafficdashboard_top_newdocument" href="trafficcopworkflow.html"><span>NEW DOCUMENT</span></a><span class="rightpanel-opener rightpanel-opener-small"><i class="ssgfont ssgfont-I"></i></span>
+              </div>
+            </div>
+            <div class="trafficdashboard_top_buttons trafficdashboard_top_buttons-mobile">
+              <div class="trafficdashboard_top-buttons trafficdashboard_top_buttons-mobile">
+                <ul>
+                  <li class="active"><a href="#">1 week</a></li>
+                  <li><a href="#">1 month</a></li>
+                  <li><a href="#">3 month</a></li>
+                  <li><a href="#">6 month</a></li>
+                  <li><a href="#">1 year</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trafficdashboard_list">
+                            <div class="trafficdashboard_item" style="background-color: #1d1d1e">
+                              <div class="trafficdashboard_item_title">Submitted For Approval<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">3</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today"></div>
+                              </div>
+                            </div>
+                            <div class="trafficdashboard_item trafficdashboard_item-invert" style="background-color: #fff">
+                              <div class="trafficdashboard_item_title">Draft<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">0</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today">0 today</div>
+                              </div>
+                            </div>
+                            <div class="trafficdashboard_item" style="background-color: #6d6d6e">
+                              <div class="trafficdashboard_item_title">Waiting For Response<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">1</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today">0 today</div>
+                              </div>
+                            </div>
+                            <div class="trafficdashboard_item" style="background-color: #633afd">
+                              <div class="trafficdashboard_item_title">Complete<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">4</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today">0 today</div>
+                              </div>
+                            </div>
+                            <div class="trafficdashboard_item" style="background-color: #5082fb">
+                              <div class="trafficdashboard_item_title">New Files<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">6</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today">12 this week</div>
+                              </div>
+                            </div>
+                            <div class="trafficdashboard_item" style="background-color: #aa53a5">
+                              <div class="trafficdashboard_item_title">Viewed<span class="trafficdashboard_item-menuopener"><i class="ssgfont ssgfont-J"></i></span></div>
+                              <div class="trafficdashboard_documents">2</div>
+                              <div class="trafficdashboard_document">Documents</div>
+                              <div class="trafficdashboard_alllink"><a href="#">View All</a>
+                                <div class="trafficdashboard_today">48 Jobs Scheduled</div>
+                              </div>
+                            </div>
+              <div class="trafficdashboard_item trafficdashboard_item-add"><a href="#"><i class="ssgfont ssgfont-L"></i>Upload new Files</a></div>
+            </div>
+          </div>
+          <div class="trafficdashboard-rightpanel rightpanel">
+            <div class="trafficdashboard_rightpanel-title">Timeline</div>
+            <div class="trafficdashboard_rightpanel-list">
+              <div class="trafficdashboard_rightpanel-item">
+                <div class="trafficdashboard_rightpanel-item-main">
+                  <div class="trafficdashboard_rightpanel-item-filetype" style="background-image: url(img/PDF.png)"></div>
+                  <div class="trafficdashboard_rightpanel-item-text">
+                    <div class="trafficdashboard_rightpanel-item-title">Deadpool File.pdf  has been approved. Job is ready to print.</div>
+                    <div class="trafficdashboard_rightpanel-item-text-aprover"><span class="success">Approved#123</span>Louie Bojila approved your document.</div>
+                  </div>
+                </div>
+                <div class="trafficdashboard_rightpanel-item-status"><span class="status comleted">Completed</span><span class="trafficdashboard_rightpanel-item_status comleted">Ready For Print</span></div>
+                <div class="trafficdashboard_rightpanel-item-result"><i class="ssgfont ssgfont-K"></i>All recipients completed this document on Apr 04,2018</div>
+              </div>
+              <div class="trafficdashboard_rightpanel-item">
+                <div class="trafficdashboard_rightpanel-item-main">
+                  <div class="trafficdashboard_rightpanel-item-text">
+                    <div class="trafficdashboard_rightpanel-item-title">BeachBody.png has been declined. You have been sent new edits.</div>
+                    <div class="trafficdashboard_rightpanel-item-text-aprover"><span class="alert">Not Approved</span>Louie Bojila declined job status.</div>
+                  </div>
+                </div>
+                <div class="trafficdashboard_rightpanel-item-status"><span class="status alert">Not Approver</span><span class="trafficdashboard_rightpanel-item_status">Not Approved</span></div>
+                <div class="trafficdashboard_rightpanel-item-uploaded"><span>Lana Goldenberg</span> |  Sent April 4th 2018.</div>
+              </div>
+            </div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

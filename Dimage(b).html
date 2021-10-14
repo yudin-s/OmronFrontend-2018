@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/dimage(b).css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list aside_list-small">
+          <div class="aside_list_search">
+            <form>
+              <button></button>
+              <input type="text" placeholder="Search">
+            </form><a class="aside_list_search-add" href="#"></a>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-f"></i><span class="title">Clients</span><span class="aside_list-number">30</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-g"></i><span class="title">Approved files</span><span class="aside_list-number">24</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-h"></i><span class="title">Files in queue</span><span class="aside_list-number">6</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-i"></i><span class="title">Job status</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-k"></i><span class="title">Send for approval</span></div>
+                    </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="breadcrumbs clearfix">
+        <ul>
+          <li><a href="#">DAM’s</a><span class="breadcrumbs-opener"></span></li>
+          <li><a href="#">SCG</a><span class="breadcrumbs-opener"></span></li>
+          <li><a href="#">Ready Files</a><span class="breadcrumbs-opener"></span></li>
+          <li class="active"><a class="breadcrumbs-mobileprev" href="#"></a><a href="#">b477.mov</a></li>
+        </ul><span class="rightpanel-opener"><i class="ssgfont ssgfont-I"></i></span>
+      </div>
+      <div class="main-content">
+        <div class="min-height contentflex">
+          <div class="dimagepage content content-rp content-rpb">
+            <div class="dimagepage_main">
+              <div class="dimagepage_main-img"><img src="img/yokohama.jpg">
+                <div class="dimagepage_main_img_comments">
+                  <div class="dimagepage_main_img_comment active" style="top: 14%; left: 65%;">
+                    <div class="dimagepage_main_img_comment_content">
+                      <div class="dimagepage_main_img_comment_content_top">
+                        <div class="dimagepage_main_img_comment_content_title">Comments</div><a href="#"><i class="ssgfont ssgfont-I"></i></a>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user3.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Stanislav Khromykh</div>
+                          <p class="extrasmall">Does anyone know how to do this? I think I broke my whole brain on this<a href="#"> project</a></p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user7.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Susan Mcloud</div>
+                          <p class="extrasmall">You must feel it with your soul, Bro!</p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_reply">
+                        <form>
+                          <input type="text" placeholder="Send Reply">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dimagepage_main_img_comment" style="top: 57%; left: 44%;">
+                    <div class="dimagepage_main_img_comment_content">
+                      <div class="dimagepage_main_img_comment_content_top">
+                        <div class="dimagepage_main_img_comment_content_title">Comments</div><a href="#"><i class="ssgfont ssgfont-I"></i></a>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user3.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Stanislav Khromykh</div>
+                          <p class="extrasmall">Does anyone know how to do this? I think I broke my whole brain on this<a href="#"> project</a></p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user7.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Susan Mcloud</div>
+                          <p class="extrasmall">You must feel it with your soul, Bro!</p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_reply">
+                        <form>
+                          <input type="text" placeholder="Send Reply">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dimagepage_main_img_comment" style="top: 76%; left: 8%;">
+                    <div class="dimagepage_main_img_comment_content">
+                      <div class="dimagepage_main_img_comment_content_top">
+                        <div class="dimagepage_main_img_comment_content_title">Comments</div><a href="#"><i class="ssgfont ssgfont-I"></i></a>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user3.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Stanislav Khromykh</div>
+                          <p class="extrasmall">Does anyone know how to do this? I think I broke my whole brain on this<a href="#"> project</a></p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_item">
+                        <div class="dimagepage_main_img_comment_item_user" style="background-image: url(img/user7.jpg)"></div>
+                        <div class="dimagepage_main_img_comment_item_text">
+                          <div class="dimagepage_main_img_comment_item_username">Susan Mcloud</div>
+                          <p class="extrasmall">You must feel it with your soul, Bro!</p>
+                        </div>
+                        <div class="dimagepage_main_img_comment_item_time">6 month ago</div>
+                      </div>
+                      <div class="dimagepage_main_img_comment_reply">
+                        <form>
+                          <input type="text" placeholder="Send Reply">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dimagepage_main_buttons"><a class="button_block button_block-black" href="#"><span class="commenticon"></span>Add comment</a><a class="button_block button_block-black" href="#">Edit file</a><a class="button_block button_block-fiolet" href="#">Download</a></div>
+              <div class="dimagepage_main_buttons-editor">
+                <div><a class="button_prev" href="#"></a>
+                  <div class="dimagepage_main_buttons-editor-number">01/02</div><a class="button_next" href="#"></a>
+                </div>
+                <div class="dimagepage_main_buttons-editor-fullscreen"><a class="button_fullscreen" href="#">FULLSCREEN</a></div>
+                <div><a class="button_zoom" href="#"></a><a class="button_rotateleft" href="#"></a><a class="button_rotateright" href="#"></a></div>
+              </div>
+              <div class="dimagepage_cancel"><a href="#">Cancel</a></div>
+            </div>
+          </div>
+          <div class="dimagepagepanel rightpanel rightpanelbig">
+            <div class="dimagepagepanel_tabs nav"><a href="#version" data-toggle="tab"><i class="ssgfont ssgfont--"></i>Version</a><a href="#metadata" data-toggle="tab"><i class="ssgfont ssgfont-S"></i>Metadata</a><a href="#comments" data-toggle="tab" id="commentsvisible"><i class="ssgfont ssgfont-O"></i>Comments</a><a href="#activity" data-toggle="tab"><i class="ssgfont ssgfont-_"></i>Activity</a><a class="active" href="#layers" data-toggle="tab"><i class="ssgfont ssgfont-x"></i>Layers</a></div>
+            <div class="tab-content">
+              <div class="tab-pane fade" id="version">
+                <div class="dimagepagepanel_versions">
+                                    <div class="dimagepagepanel_version">
+                                      <div class="dimagepagepanel_version_img" style="background-image: url(img/yokohama.jpg)"></div>
+                                      <div class="dimagepagepanel_version_text">
+                                        <div class="dimagepagepanel_version_title">SCG logotype</div>
+                                        <div class="dimagepagepanel_version_ver">Ver. 1
+                                        </div>
+                                      </div>
+                                      <div class="dimagepagepanel_version_menu"><a href="#"><i class="ssgfont ssgfont-l"></i></a><a href="#"><i class="ssgfont ssgfont-I"></i></a></div>
+                                    </div>
+                                    <div class="dimagepagepanel_version">
+                                      <div class="dimagepagepanel_version_img" style="background-image: url(img/yokohama.jpg)"></div>
+                                      <div class="dimagepagepanel_version_text">
+                                        <div class="dimagepagepanel_version_title">SCG logotype</div>
+                                        <div class="dimagepagepanel_version_ver">Ver. 2
+                                        </div>
+                                      </div>
+                                      <div class="dimagepagepanel_version_menu"><a href="#"><i class="ssgfont ssgfont-l"></i></a><a href="#"><i class="ssgfont ssgfont-I"></i></a></div>
+                                    </div>
+                                    <div class="dimagepagepanel_version">
+                                      <div class="dimagepagepanel_version_img" style="background-image: url(img/yokohama.jpg)"></div>
+                                      <div class="dimagepagepanel_version_text">
+                                        <div class="dimagepagepanel_version_title">SCG logotype</div>
+                                        <div class="dimagepagepanel_version_ver">Ver. 3
+                                        </div>
+                                      </div>
+                                      <div class="dimagepagepanel_version_menu"><a href="#"><i class="ssgfont ssgfont-l"></i></a><a href="#"><i class="ssgfont ssgfont-I"></i></a></div>
+                                    </div>
+                  <div class="dimagepagepanel_version_button"><a class="button button_fiolet button_low" href="#">Download 4 attachments</a></div>
+                  <div class="dimagepagepanel_version_filemenu">
+                    <ul>
+                      <li class="active"><a href="#"><i class="ssgfont ssgfont-l"></i>Upload files</a></li>
+                      <li><a href="#"><i class="ssgfont ssgfont-m"></i>Download files</a></li>
+                      <li><a href="#"><i class="ssgfont ssgfont-k"></i>Share files</a></li>
+                      <li><a href="#"><i class="ssgfont ssgfont-n"></i>Setting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="metadata">
+                <div class="dimagepagepanel_filename-color">
+                  <div class="dimagepagepanel_filename">Full-color-mark 2x.png</div>
+                  <div class="dimagepagepanel_colors"><span class="dimagepagepanel_color dimagepagepanel_colormain" style="background-color: #1c1c1d"></span><span class="dimagepagepanel_color" style="background-color: #b41d35"></span><span class="dimagepagepanel_color" style="background-color: #353b67"></span><span class="dimagepagepanel_color" style="background-color: #f0e2ec"></span></div>
+                  <div class="dimagepagepanel_color-name">#1c1c1d</div>
+                </div>
+                <div class="dimagepagepanel_table dimagepagepanel-b-top">
+                  <table>
+                    <tr>
+                      <td class="dimagepagepanel_table-title">FileTyoe</td>
+                      <td>PNG</td>
+                    </tr>
+                    <tr>
+                      <td class="dimagepagepanel_table-title">MIMEType</td>
+                      <td>image/png</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="dimagepagepanel-group opened">
+                  <div class="dimagepagepanelgroup-title">Status<span class="dimagepagepanelgroup-opener"></span></div>
+                  <div class="dimagepagepanel-group-content" style="display: block">
+                    <div class="dimagepagepanel_table">
+                      <table>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Posted By</td>
+                          <td>Unlined</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Views</td>
+                          <td>Krit</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Share</td>
+                          <td>self</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Comment</td>
+                          <td>21*Hight quality size</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Adspend Budget</td>
+                          <td>image/png</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="dimagepagepanel-group">
+                  <div class="dimagepagepanelgroup-title">Show non-indexed metadate<span class="dimagepagepanelgroup-opener"></span></div>
+                  <div class="dimagepagepanel-group-content">
+                    <div class="dimagepagepanel_table">
+                      <table>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Posted By</td>
+                          <td>Unlined</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Views</td>
+                          <td>Krit</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Share</td>
+                          <td>self</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Comment</td>
+                          <td>21*Hight quality size</td>
+                        </tr>
+                        <tr>
+                          <td class="dimagepagepanel_table-title">Adspend Budget</td>
+                          <td>image/png</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="dimagepagepanel_sharelink dimagepagepanel-b-bottom"><a href="#">Share your video</a><a href="#">Copy link</a></div>
+                <div class="dimagepagepanel_search dimagepagepanel-b-bottom">
+                  <form>
+                    <input type="text" placeholder="Quick Search">
+                    <button></button>
+                  </form>
+                </div>
+                <div class="dimagepagepanel-messages">
+                  <div class="dimagepagepanel-messages-group">
+                    <div class="dimagepagepanel-messages-title">Slack Channels</div>
+                    <div class="dimagepagepanel-messages-channels"><a href="#">#random</a><a href="#">#noxterlogo</a><a href="#">#general</a></div>
+                  </div>
+                  <div class="dimagepagepanel-messages-group">
+                    <div class="dimagepagepanel-messages-title">Direct Messages</div>
+                    <div class="dimagepagepanel-messages-users"><a class="dimagepagepanel-messages-user" href="#">
+                        <div class="dimagepagepanel-messages-user-icon" style="background-color: #f6c747"></div>andrey.s</a><a class="dimagepagepanel-messages-user" href="#">
+                        <div class="dimagepagepanel-messages-user-icon" style="background-color: #51dff0"></div>Stan</a><a class="dimagepagepanel-messages-user" href="#">
+                        <div class="dimagepagepanel-messages-user-icon" style="background-color: #7575f5"></div>Lana.g</a><a class="dimagepagepanel-messages-user" href="#">
+                        <div class="dimagepagepanel-messages-user-icon" style="background-color: #fc5a5e"></div>raj.uimatic</a></div>
+                  </div>
+                  <div class="dimagepagepanel-messages-bottom">Select a person or channel</div>
+                </div>
+                <div class="dimagepagepanel-comments">
+                  <div class="dimagepagepanel_comments-title">Comments<span><i class="ssgfont ssgfont-n"></i></span></div>
+                  <div class="dimagepagepanel_comments-form">
+                    <form>
+                      <textarea placeholder="Write a comment"></textarea>
+                      <div class="dimagepagepanel_comments-form-bottom">
+                        <div class="dimagepagepanel_comments-form-counter">0:00/10:23</div>
+                        <button>Post</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="dimagepagepanel_comments-text"><span>No one has left a comment on this image</span></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="comments">
+                <div class="dimagepagepanel_comments_list">
+                  <div class="dimagepagepanel_comments_item">
+                    <div class="dimagepagepanel_comments_user" style="background-image: url(img/user3.jpg)"></div>
+                    <div class="dimagepagepanel_comments_text">
+                      <div class="dimagepagepanel_comments_username">Stanislav Khromykh</div>
+                      <p class="extrasmall">Does anyone know how to do this? this fucking thing? otherwise I broke the whole brain on this<a href="#"> project</a></p>
+                    </div>
+                    <div class="dimagepagepanel_comments_time">6 month ago</div>
+                  </div>
+                  <div class="dimagepagepanel_comments_item">
+                    <div class="dimagepagepanel_comments_user" style="background-image: url(img/user7.jpg)"></div>
+                    <div class="dimagepagepanel_comments_text">
+                      <div class="dimagepagepanel_comments_username">Andrey Stelmakh</div>
+                      <p class="extrasmall">You must feel it with your soul, Bro!</p>
+                    </div>
+                    <div class="dimagepagepanel_comments_time">6 month ago</div>
+                  </div>
+                </div>
+                <div class="dimagepagepanel_version_button"><a class="button button_fiolet button_low" href="#">Add new Comment</a></div>
+              </div>
+              <div class="tab-pane fade" id="activity">
+                <div class="dimagepagepanel_fileactivity">
+                  <div class="dimagepagepanel_fileactivity-title">File activity</div>
+                  <div class="dimagepagepanel_fileactivity_item">
+                    <div class="dimagepagepanel_fileactivity_item-img" style="background-image: url(img/fileactivityimg1.jpg)"></div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">Document Sent For Approval</div>
+                      <p class="extrasmall">Sent by <a class="dimagepagepanel_fileactivity_item_user" href="#">Chris.Toomey</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_fileactivity_item">
+                    <div class="dimagepagepanel_fileactivity_item-img" style="background-image: url(img/fileactivityimg2.jpg)"></div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">Mechanical Due Date Set <a class="dimagepagepanel_fileactivity_item-text-project" href="#">DeadPool</a>
+                      </div>
+                      <p class="extrasmall">Commited by <a class="dimagepagepanel_fileactivity_item_user" href="#">Casual Klohe</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_fileactivity_item">
+                    <div class="dimagepagepanel_fileactivity_item-img user" style="background-image: url(img/fileactivityimg3.jpg)">
+                      <div class="dimagepagepanel_fileactivity_item-img-small" style="background-image: url(img/fileactivityimg4.jpg)"></div>
+                    </div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">invited you to edits the folder <a class="dimagepagepanel_fileactivity_item-text-project" href="#">DeadPool</a>
+                      </div>
+                      <p class="extrasmall">Commited by <a class="dimagepagepanel_fileactivity_item_user" href="#">Casual Klohe</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_fileactivity_item answer">
+                    <div class="dimagepagepanel_fileactivity_item-img user" style="background-image: url(img/fileactivityimg5.jpg)">
+                      <div class="dimagepagepanel_fileactivity_item-img-small" style="background-image: url(img/fileactivityimg6.jpg)"></div>
+                    </div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">Chris whats this logo?</div>
+                      <p class="extrasmall">Comment by <a class="dimagepagepanel_fileactivity_item_user" href="#">The Big L</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_fileactivity_item">
+                    <div class="dimagepagepanel_fileactivity_item-img user" style="background-image: url(img/fileactivityimg3.jpg)"></div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">A New Version Added to <a class="dimagepagepanel_fileactivity_item-text-project" href="#">DeadPool</a>
+                      </div>
+                      <p class="extrasmall">Version Added by <a class="dimagepagepanel_fileactivity_item_user" href="#">Kristina Lucas</a>
+                      </p>
+                    </div><a class="dimagepagepanel_fileactivity_item-copy" href="#"></a>
+                  </div>
+                  <div class="dimagepagepanel_fileactivity_item">
+                    <div class="dimagepagepanel_fileactivity_item-img user" style="background-image: url(img/fileactivityimg7.jpg)"></div>
+                    <div class="dimagepagepanel_fileactivity_item-text">
+                      <div class="dimagepagepanel_fileactivity_item-text-title">I Hate it fucking Poster! <a class="dimagepagepanel_fileactivity_item-text-project" href="#">DeadPool</a>
+                      </div>
+                      <p class="extrasmall">Commented by <a class="dimagepagepanel_fileactivity_item_user" href="#">Evgeny Blue</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="layers">
+                <div class="dimagepagepanel_layers">
+                  <div class="dimagepagepanel_layer">
+                    <div class="dimagepagepanel_layer-img"><img src="img/dimagepagepanel_layer_img1.jpg"></div>
+                    <div class="dimagepagepanel_layer-bottom">
+                      <div class="dimagepagepanel_layer-title">Page 1</div>
+                      <div class="dimagepagepanel_layer-buttons"><a href="#"><i class="ssgfont ssgfont-plus"></i></a><a href="#"><i class="ssgfont ssgfont-eq"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_layer active">
+                    <div class="dimagepagepanel_layer-img"><img src="img/dimagepagepanel_layer_img2.jpg"></div>
+                    <div class="dimagepagepanel_layer-bottom">
+                      <div class="dimagepagepanel_layer-title">Page 2</div>
+                      <div class="dimagepagepanel_layer-buttons"><a href="#"><i class="ssgfont ssgfont-plus"></i></a><a href="#"><i class="ssgfont ssgfont-eq"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="dimagepagepanel_layer">
+                    <div class="dimagepagepanel_layer-img"><a class="dimagepagepanel_layer-img-add" href="#"></a></div>
+                    <div class="dimagepagepanel_layer-bottom">
+                      <div class="dimagepagepanel_layer-title">New page</div>
+                      <div class="dimagepagepanel_layer-buttons"><a href="#"><i class="ssgfont ssgfont-plus"></i></a><a href="#"><i class="ssgfont ssgfont-eq"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

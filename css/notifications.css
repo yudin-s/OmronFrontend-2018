@@ -1,0 +1,726 @@
+.notifications {
+    -webkit-box-shadow: 0 4px 27px rgba(173, 173, 189, 0.32);
+    box-shadow: 0 4px 27px rgba(173, 173, 189, 0.32);
+    background: #fff;
+    max-width: 1238px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.notifications_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 61px;
+    border-bottom: 1px solid #e1e4eb;
+
+}
+
+.notifications_left {
+    width: 202px;
+    border-right: 1px solid #e1e4eb;
+}
+
+.notifications_left_head {
+    padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #e1e4eb;
+    height: 61px;
+}
+
+
+.notifications_left_head .button {
+    width: 100%;
+
+}
+
+.notifications_left_folders {
+    padding: 32px 24px 42px;
+    border-bottom: 1px solid #e1e4eb
+}
+
+.notifications_left_folders a {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    padding-right: 48px;
+    padding-left: 27px;
+    line-height: 24px;
+    white-space: nowrap
+}
+
+.notifications_left-title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.notifications_left_folders a + a {
+    margin-top: 24px;
+}
+
+.notifications_left_folders a i {
+    font-size: 24px;
+    color: #ccccd6;
+    width: 27px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.notifications_left_folder-number {
+    width: 42px;
+    height: 24px;
+    background-color: #edeff3;
+    border-radius: 12px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: #adadbd;
+    font-size: 14px;
+}
+
+.notifications_left_legends {
+    padding: 36px 24px 82px;
+}
+
+.notifications_left_legends ul li {
+    position: relative;
+    padding-left: 27px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.notifications_left_legends ul li + li {
+    margin-top: 26px;
+}
+
+.notifications_left_legends ul li:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    margin-top:
+}
+
+.notifications_left_legends ul li.notifications_left_legends-project:before {
+    background: #f1443d;
+}
+
+.notifications_left_legends ul li.notifications_left_legends-web:before {
+    background: #57e2c2;
+}
+
+.notifications_left_legends ul li.notifications_left_legends-home:before {
+    background: #bc27dd;
+}
+
+.notifications_left_legends ul li.notifications_left_legends-work:before {
+    background: #2b98f0;
+}
+
+.notifications_main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.notifications_main .notifications_head {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.notifications_main .notifications_head i {
+    font-size: 24px;
+    color: #cbcbd5;
+}
+
+.notifications_main_head1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+    -webkit-box-flex: 0.58;
+    -ms-flex-positive: 0.58;
+    flex-grow: 0.58;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 24px
+}
+
+.notifications_main_head2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 60px;
+    -webkit-box-flex: 0.42;
+    -ms-flex-positive: 0.42;
+    flex-grow: 0.42;
+    justify-content: space-between;
+    padding-left: 24px;
+}
+
+.notifications_checkbox {
+    display: block;
+    width: 48px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.notifications_checkbox input {
+    display: none !important;
+}
+
+.notifications_checkbox span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e1e4eb;
+    border-radius: 3px;
+    position: relative;
+}
+
+.notifications_checkbox span:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-family: "ssg-icons";
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #5081fb;
+}
+
+.notifications_checkbox input:checked + span {
+    border-color: #5081fb
+}
+
+.notifications_checkbox input:checked + span:before {
+    content: "K";
+}
+
+.notifications_head .notifications_checkbox:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url(../img/notifications_checkbox.png) no-repeat center / contain;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.notifications_main_head-count {
+    color: #b5b5c3;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.notifications_main_head_count {
+    padding: 0 12px;
+    white-space: nowrap
+}
+
+.notifications_main_head-count-buttons {
+    width: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.notifications_main_head-count-buttons a {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: url(../img/notifications_main_head-count-buttons.png) no-repeat center / contain;
+}
+
+.notifications_main_head-count-buttons a.notifications_main_head-count-next {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.notifications_main_head-search {
+    border-left: 1px solid #e1e4eb;
+    border-right: 1px solid #e1e4eb;
+}
+
+.notifications_main_head-search form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 24px;
+}
+
+.notifications_main_head-search form button {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../img/search.png) no-repeat center / contain;
+}
+
+.notifications_main_head-search form input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 60px;
+    padding: 0 24px;
+}
+
+.notifications_main_head-search form input::-webkit-input-placeholder {
+    color: #b5b5c3;
+}
+
+.notifications_main_head-search form input::-moz-placeholder {
+    color: #b5b5c3;
+    opacity: 1
+}
+
+.notifications_main_head-search form input:-moz-placeholder {
+    color: #b5b5c3;
+    opacity: 1
+}
+
+.notifications_main_head-search form input:-ms-input-placeholder {
+    color: #b5b5c3;
+}
+
+.notifications_main_head_sandc {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.notifications_main_head-menu {
+    padding: 0 24px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.notifications_main_head-setting {
+    display: block;
+    margin-left: 24px;
+}
+
+
+
+.notifications_maillist table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.notifications_maillist table tr {
+    border-bottom: 1px solid #e1e4eb;
+}
+
+.notifications_maillist table td {
+    padding: 0 12px;
+    vertical-align: middle
+}
+
+.notifications_maillist table td:first-child {
+    padding-left: 24px;
+}
+
+.notifications_maillist table td:last-child {
+    padding-right: 24px;
+    text-align: right
+}
+
+.notifications_maillist .notifications_checkbox {
+    width: 20px;
+}
+
+.notifications_mail_favorite {
+    display: block;
+    width: 20px;
+    cursor: pointer;
+}
+
+.notifications_mail_favorite input {
+    display: none;
+}
+
+.notifications_mail_favorite span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/stargrey.png) no-repeat center / contain;
+}
+
+.notifications_mail_favorite input:checked + span {
+    background-image: url(../img/catalog2_item-favorite.png);
+}
+
+.notifications_mail_legend {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.notifications_mail_img {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    position: relative;
+}
+
+.notifications_mail_img:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e1e4eb;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.notifications_mail {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    min-height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.notifications_mail_tittle {
+    width: 130px;
+}
+
+.notifications_mail_attached {
+    font-size: 16px;
+    color: #cbcbd5;
+    margin-top: -2px;
+}
+
+.notifications_mail_time {
+    font-size: 14px;
+    padding-left: 12px;
+    white-space: nowrap
+}
+
+.notifications_mailitem-selected {
+    background: #f7f9fc
+}
+
+.notifications_mailitem-readed .notifications_mail,
+.notifications_mailitem-readed .notifications_mail_time {
+    color: #bfbfcb;
+}
+
+.notifications_buttonmobile {
+    display: none
+}
+
+.notifications-leftpanel-opener {
+    width: 36px;
+    height: 36px;
+    background-color: #5081fb;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 10px rgba(99, 58, 253, 0.63);
+    box-shadow: 0 6px 10px rgba(99, 58, 253, 0.63);
+    padding: 12px 8px;
+    display: none
+}
+
+.notifications-leftpanel-opener span {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    cursor: pointer
+}
+
+.notifications-leftpanel-opener span + span {
+    margin-top: 5px;
+}
+
+
+
+@media(max-width: 1599px) {
+    .notifications_head {
+        display: block;
+    }
+
+    .notifications_main_head1 {
+        padding-left: 0;
+        border-bottom: 1px solid #e1e4eb
+    }
+
+    .notifications_main_head-search {
+        border-left: none
+    }
+
+    .notifications_main_head-menu {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .notifications_main_head-menu a {
+        margin: 0 12px
+    }
+
+    .notifications_main_head-menu a:last-child {
+        margin-right: 0
+    }
+}
+
+@media(max-width: 1439px) {
+    .notifications_left_head,
+    .notifications_left_folders,
+    .notifications_left_legends,
+    .notifications_main_head-menu {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .notifications_main_head2 {
+        padding-left: 12px;
+    }
+    .notifications_main_head1 {
+        padding-right: 12px;
+    }
+
+    .notifications_maillist table td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .notifications_maillist table td:first-child {
+        padding-left: 12px;
+    }
+    .notifications_maillist table td:last-child {
+        padding-right: 12px;
+    }
+
+    .notifications_mail {
+        display: block;
+        min-height: 0
+    }
+
+    .notifications_mail_text {
+        font-size: 11px;
+        line-height: 14px;
+    }
+}
+
+@media(max-width: 1023px) {
+    .notifications_left_folders a {
+        padding-right: 44px
+    }
+
+    .notifications_main_head-menu {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-right: 12px;
+    }
+
+    .notifications_main_head-menu a {
+        margin: 0
+    }
+
+    .notifications_main_head_sandc {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .notifications_mail-time {
+        display: none
+    }
+
+    .notifications_maillist table td {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .notifications_maillist table td.notifications_mail-attached {
+        padding-right: 12px
+    }
+
+    .notifications_main_head-setting {
+        margin-left: 0;
+        width: 60px;
+        text-align: center
+    }
+
+    .notifications_main_head1 {
+        padding-right: 0
+    }
+
+    .notifications_main_head-search {
+        width: 60px;
+        padding: 0;
+        height: 60px;
+        border-left: 1px solid #e1e4eb;
+        text-align: center;
+        background: url(../img/search.png) no-repeat center / contain;
+        background-size: 20px auto;
+        position: relative;
+        z-index: 13;
+    }
+
+    .notifications_main_head-search form {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        display: none;
+        padding-right: 44px;
+        background: #fff
+    }
+
+    .notifications_main_head-search form button {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        height: 100%;
+    }
+
+    .mobileinput form {
+        display: block
+    }
+}
+
+@media(max-width: 480px) {
+    .notifications_left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 10;
+        display: none;
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .notifications_left::-webkit-scrollbar {
+        width: 0
+    }
+
+    .notifications {
+        display: block;
+        padding-bottom: 60px;
+        position: relative;
+
+    }
+
+    .notifications_buttonmobile {
+        display: block;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .notifications_buttonmobile .button {
+        width: 238px;
+    }
+
+    .notifications-leftpanel-opener {
+        display: block;
+        z-index: 11;
+    }
+
+    .notifications_main_head1 {
+        padding-left: 12px;
+    }
+
+    .notifications_left_head .button {
+        display: none;
+    }
+    
+    .notifications_main_head-count-buttons {
+    width: 36px;
+
+}

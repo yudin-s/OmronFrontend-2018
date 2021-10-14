@@ -1,0 +1,344 @@
+.rmamessagepage_main {
+    background: #f7f9fc;
+}
+
+.rmamessagepage_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% + 24px);
+    margin: 0 -12px
+}
+
+.rmamessagepage_item {
+    position: relative;
+    width: 384px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 27px rgba(173, 173, 189, 0.32);
+    box-shadow: 0 4px 27px rgba(173, 173, 189, 0.32);
+    padding: 18px 24px 72px;
+    margin: 12px 6px;
+    min-height: 384px;
+}
+
+.rmamessagepage_item-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 24px;
+    position: relative;
+}
+
+.rmamessagepage_menuopener {
+    color: #adadbd;
+    font-size: 19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 24px;
+    display: block;
+    width: 18px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.rmamessagepage_item-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 24px 0;
+
+}
+
+.rmamessagepage_item-form-icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 24px;
+}
+
+.rmamessagepage_item-form form {
+    border: 1px solid #e1e4eb;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 60px);
+}
+
+.rmamessagepage_item-form form button {
+    height: 36px;
+    width: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+.rmamessagepage_item-description {
+    margin: 0 -24px;
+    width: calc(100% + 48px);
+    padding: 16px 24px;
+    background: #eff1f5;
+    border-top: 1px solid #e1e4eb;
+    border-bottom: 1px solid #e1e4eb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.rmamessagepage_item-description div {
+    width: 50%;
+    color: #b6b6c4;
+    font-size: 14px;
+}
+
+
+.rmamessagepage_item-form form input {
+    width: calc(100% - 36px);
+    display: block;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.rmamessagepage_item-list {
+    margin: 0 -24px;
+    width: calc(100% + 48px);
+}
+
+.rmamessagepage_item-item {
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding: 12px 48px 12px 24px;
+    font-size: 14px;
+    position: relative;
+    border-top: 1px solid #e1e4eb;
+    line-height: 24px;
+}
+
+.rmamessagepage_item-item .rmamessagepage_menuopener {
+    top: 12px;
+    right: 24px;
+}
+
+.rmamessagepage_item-item-green {
+    border-left-color: #bbd625;
+}
+
+.rmamessagepage_item-item-orange {
+    border-left-color: #f8a452;
+}
+
+.rmamessagepage_item-item-red {
+    border-left-color: #f53535;
+}
+
+.rmamessagepage_item-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    padding: 0 24px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #e1e4eb;
+}
+
+.rmamessagepage_item-bottom .button {
+    padding-left: 36px;
+}
+
+.rmamessagepage_item-bottom .button .icon {
+    width: 14px;
+    height: 1px;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.rmamessagepage_item-bottom .button .icon:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.rmamessagepage_item_delete {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/rmamessagepage_item_delete.png) no-repeat center / contain;
+    margin-left: 12px;
+}
+
+.rmamessagepage_item_refresh {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background: url(../img/rmamessagepage_item_refresh.png) no-repeat center / contain;
+    margin-right: 18px;
+}
+
+.rmamessagepage_item_burger {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    background: url(../img/rmamessagepage_item_burger.png) no-repeat center / contain;
+}
+
+.rmamessagepage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.rmamessagepagepanel-filter {
+    padding: 26px 0;
+}
+
+.rmamessagepagepanel-filter ul li + li {
+    margin-top: 30px;
+}
+
+.rmamessagepagepanel-filter ul li a {
+    font-size: 18px;
+}
+
+.rmamessagepagepanel-filter ul li a:hover {
+    color: #5081fb;
+}
+
+.rmamessagepagepanel-filter ul li a i {
+    font-size: 23px;
+    text-align: left;
+    width: 36px;
+    position: relative;
+    top: -3px;
+}
+
+.rmamessagepagepanel-actions-title {
+    color: #adadbd;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+
+.rmamessagepagepanel-action {
+    margin: 0 -24px;
+    width: calc(100% + 24px);
+    border-top: 1px solid #e1e4eb;
+    padding: 18px 24px 16px;
+    ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.rmamessagepagepanel-action-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 12px;
+    position: relative;
+    border: 3px solid #fff;
+}
+
+.rmamessagepagepanel-action-icon:before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #e1e4eb;
+}
+
+.rmamessagepagepanel-action-text {
+    width: calc(100% - 64px);
+}
+
+.rmamessagepagepanel-action-text p + p.colorgrey {
+    margin-top: 6px;
+}
+
+.rmamessagepagepanel {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.rmamessagepagepanel-action-other {
+    color: #adadbd;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 16px 0;
+}
+
+.rmamessagepage_main-top {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media(max-width: 1919px) {
+    .rmamessagepage_item {
+        width: calc(33.33333% - 12px);
+        max-width: 384px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .rmamessagepage_item {
+        width: calc(50% - 12px);
+    }
+}
+
+@media(max-width: 639px) {
+    .rmamessagepage_item {
+        width: 100%;
+        margin: 12px auto;
+    }
+
+    .rmamessagepage_list {
+        display: block;
+        width: 100%;
+        margin: 0;
+        width: 0 24px;
+    }
+}
+
+@media(max-width: 359px) {
+    .rmamessagepage_list {       
+        width: 0 12px;
+    }
+}

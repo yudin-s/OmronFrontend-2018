@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/traficcopworkflow.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list">
+          <div class="aside_list-group active">
+            <div class="aside_list-title"><i class="ssgfont ssgfont-q"></i><span class="title">Home</span></div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-2"></i><span class="title">Product</span><span class="aside_list-number">30</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-0"></i><a href="#">Manuals</a></li>
+                <li><i class="omronfont omronfont-7"></i><a href="#">CAD</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-3"></i><span class="title">Application</span><span class="aside_list-number">24</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-8"></i><a href="#">Notes</a></li>
+                <li><i class="omronfont omronfont-5"></i><a href="#">Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-1"></i><span class="title">Training Material</span><span class="aside_list-number">6</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="ssgfont ssgfont-f"></i><a href="#">Beginners</a></li>
+                <li><i class="omronfont omronfont-6"></i><a href="#">Advansed</a></li>
+                <li></li>
+                <li><i class="ssgfont ssgfont-i"></i><a href="#">Tutorials</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-n"></i><span class="title">R & D</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-4"></i><a href="#">Software</a></li>
+                <li><i class="omronfont omronfont-9"></i><a href="#">Firmware</a></li>
+                <li><i class="omronfont omronfont-a"></i><a href="#">Hardware</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="workflow_page">
+          <div class="workflow_main">
+            <div class="workflow_main_top">
+              <h1>Workflow Edit</h1><span class="rightpanel-opener"><i class="ssgfont ssgfont-I"></i></span>
+            </div>
+            <div class="workflow_buttons">
+              <ul>
+                <li><a class="button_small" href="#">Save</a></li>
+                <li><a class="button_small" href="#">Save & New</a></li>
+                <li><a class="button_small" href="#">Cancel</a></li>
+              </ul>
+            </div>
+            <form class="workflow_form workflow_edit">
+              <div class="workflow_group">
+                <div class="workflow_title-big">Project Name</div>
+                <div class="workflow_title">Information</div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="workflow_row">
+                      <label class="workflow_form_title">Project Name<span class="workflow_form_title-required">*</span></label>
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="workflow_row">
+                      <label class="workflow_form_title">Season</label>
+                      <select class="workflow_select2">
+                        <option></option>
+                        <option>Season 1</option>
+                        <option>Season 2</option>
+                        <option>Season 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="workflow_row">
+                      <label class="workflow_form_title">Volume</label>
+                      <select class="workflow_select2">
+                        <option></option>
+                        <option>Volume 1</option>
+                        <option>Volume 2</option>
+                        <option>Volume 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 col-sm-12 col-12">
+                    <div class="workflow_date">
+                      <label class="workflow_form_title">Mechanical Due Date<span class="workflow_form_title-required">*</span></label>
+                      <label class="datepicker-opener">
+                        <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-12">
+                    <div class="workflow_date">
+                      <label class="workflow_form_title">Film Due Date</label>
+                      <label class="datepicker-opener">
+                        <input class="datepicker2" type="text" value="October 15 2018"><i class="ssgfont ssgfont-J"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-12">
+                    <div class="workflow_date">
+                      <label class="workflow_form_title">Street Date</label>
+                      <label class="datepicker-opener">
+                        <input class="datepicker2" type="text" value="October 15 2018"><i class="ssgfont ssgfont-J"></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="workflow_group">
+                <div class="workflow_title">Agency</div>
+                <div class="row">
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="workflow_row">
+                      <label class="workflow_form_title">Design Agency<span class="workflow_form_title-required">*</span></label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                    <div class="workflow_row">
+                      <label class="workflow_form_title">Agency Contact<span class="workflow_form_title-required">*</span></label>
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="workflow_group workflow_agency">
+                <div class="workflow_agency-owner">
+                  <div class="workflow_agency-title">Owner</div><a class="colorfiolet" href="#">Traffic Cop Support</a>
+                </div>
+                <div class="workflow_agency-status">
+                  <div class="workflow_agency-title">Status<span class="workflow_form_title-required">*</span></div>
+                  <div class="workflow_agency_status">In Progress<a href="#"><i class="ssgfont ssgfont-J"></i></a></div>
+                </div>
+                <label class="workflow_agency-checkbox">
+                  <input type="checkbox" checked><span>International</span>
+                </label>
+              </div>
+              <div class="workflow_group">
+                <div class="workflow_tasks">
+                  <div class="workflow_title">DVD Packaging/Stickers</div>
+                  <div class="workflow_fields2">
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Available</div>
+                        <ul class="workflow_fields_list workflow_fields_list2">
+                          <li>Embedment Sheet Single Sided</li>
+                          <li>Embedment Sheet Double Sisded</li>
+                        </ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-add" href="#">Add</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-remove" href="#">Remove</a></div>
+                    </div>
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Chosen</div>
+                        <ul class="workflow_fields_list workflow_fields_list2">
+                          <li>Rentals</li>
+                        </ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-up" href="#">Up</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-down" href="#">Down</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workflow_tasks">
+                  <div class="workflow_title">Disc Labels</div>
+                  <div class="workflow_fields2">
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Available</div>
+                        <ul class="workflow_fields_list workflow_fields_list2">
+                          <li>Grey Scale</li>
+                          <li>4-color</li>
+                        </ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-add" href="#">Add</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-remove" href="#">Remove</a></div>
+                    </div>
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Chosen</div>
+                        <ul class="workflow_fields_list workflow_fields_list2"></ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-up" href="#">Up</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-down" href="#">Down</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workflow_tasks">
+                  <div class="workflow_title">Media</div>
+                  <div class="workflow_fields2">
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Available</div>
+                        <ul class="workflow_fields_list workflow_fields_list2">
+                          <li>Vertical (1 page)</li>
+                          <li>Horizontal (2 page)</li>
+                        </ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-add" href="#">Add</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-remove" href="#">Remove</a></div>
+                    </div>
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Chosen</div>
+                        <ul class="workflow_fields_list workflow_fields_list2"></ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-up" href="#">Up</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-down" href="#">Down</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workflow_tasks">
+                  <div class="workflow_title">P.O.P</div>
+                  <div class="workflow_fields2">
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Available</div>
+                        <ul class="workflow_fields_list workflow_fields_list2">
+                          <li>Poster</li>
+                          <li>24, 48, 96 - Etc. Floor Display</li>
+                        </ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-add" href="#">Add</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-remove" href="#">Remove</a></div>
+                    </div>
+                    <div class="workflow_field2 clearfix">
+                      <div class="workflow_fields2_group">
+                        <div class="workflow_field2-title">Chosen</div>
+                        <ul class="workflow_fields_list workflow_fields_list2"></ul>
+                      </div>
+                      <div class="workflow_fields_buttons workflow_fields2_buttons"><a class="workflow_fields_button workflow_fields_buttontoptext workflow_fields_button-up" href="#">Up</a><a class="workflow_fields_button workflow_fields_buttonbottomtext workflow_fields_button-down" href="#">Down</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="workflow_group">
+                <div class="workflow_buttons">
+                  <ul>
+                    <li><a class="button_small" href="#">Save</a></li>
+                    <li><a class="button_small" href="#">Save&New</a></li>
+                    <li><a class="button_small" href="#">Cancel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="workflow_panel rightpanel">
+            <div class="workflow_panel_buttons"><a class="button button_low button_transparent" href="#">Upload with Gmail</a></div>
+            <div class="workflow_panel_group"><a href="#">Organization Profile</a><a href="#">Users & Roles</a><a href="#">Warehouses</a></div>
+            <div class="workflow_panel_group"><a href="#">Preferences</a></div>
+            <div class="workflow_panel_group"><a href="#">Currencies</a><a href="#">Taxes</a><a href="#">Price List</a><a href="#">Templates</a><a href="#">Email Templates</a><a href="#">Automation</a></div>
+            <div class="workflow_panel_group"><a href="#">Integrations</a></div>
+            <div class="workflow_panel_group"><a href="#">Data Backup</a><a href="#">Subscription</a><a href="#">Send for Approval</a></div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

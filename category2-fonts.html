@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/catalog2(f3).css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <link href="css/Dcategory(b).css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list aside_list-small">
+          <div class="aside_list_search">
+            <form>
+              <button></button>
+              <input type="text" placeholder="Search">
+            </form><a class="aside_list_search-add" href="#"></a>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-f"></i><span class="title">Clients</span><span class="aside_list-number">30</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-g"></i><span class="title">Approved files</span><span class="aside_list-number">24</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-h"></i><span class="title">Files in queue</span><span class="aside_list-number">6</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-allfiles.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>All Formats</span>
+                  </label>
+                </li>
+                <li class="checked"><span class="aside_list-filetype" style="background-image: url(img/aside-photos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked><span>Photos</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-documents.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Documents</span>
+                  </label>
+                </li>
+                <li><span class="aside_list-filetype" style="background-image: url(img/aside-videos.png)"></span>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Videos</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-i"></i><span class="title">Job status</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-k"></i><span class="title">Send for approval</span></div>
+                    </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="rightpanel-mobilebg"></div>
+        <div class="catalog2_page">
+          <div class="catalog2_page_main">
+            <div class="breadcrumbs clearfix">
+              <ul>
+                <li><a href="#">DAM’s</a><span class="breadcrumbs-opener"></span></li>
+                <li><a href="#">SCG</a><span class="breadcrumbs-opener"></span></li>
+                <li><a href="#">Ready Files</a><span class="breadcrumbs-opener"></span></li>
+                <li class="active"><a class="breadcrumbs-mobileprev" href="#"></a><a href="#">b477.mov</a></li>
+              </ul>
+              <div class="rightpanel-opener"><span class="notext"></span></div><a class="changeview" href="#"></a>
+            </div>
+            <div class="catalog2">
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>lucifer.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>ariel.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>monster.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>arielbold.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>notype.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>nofont.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>notreal.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>BoldItalic.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+                            <div class="catalog2_item">
+                              <div class="catalog2_item_menu catalog2_menu-justify">
+                                <label class="checkbox">
+                                  <input type="checkbox"><span></span>
+                                </label><span class="catalog2_item_menu-opener ssgfont ssgfont-o"></span>
+                                <div class="catalog2_menu">
+                                  <div class="catalog2_menu_group"><a href="#" data-toggle="modal" data-target="#download">Download</a><a href="#">Convert to a job</a><a href="#" data-toggle="modal" data-target="#share">Share file</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Remind me</a><a href="#">Schedule</a><a href="#">Move</a><a href="#">Duplicate</a></div>
+                                  <div class="catalog2_menu_group"><a href="#">Permission</a></div>
+                                </div>
+                              </div>
+                              <div class="catalog2_item_icon">
+                                <div class="catalog2_item-icon catalog2_item-font"></div>
+                                <p>Text.tif<i class="catalog2-star"></i></p>
+                                <div class="catalog2_item-addbasket"><a href="#"><i class="ssgfont ssgfont-A"></i>Add To Basket</a></div>
+                              </div>
+                            </div>
+            </div>
+          </div>
+          <div class="category_page_panel rightpanel">
+            <div class="category_page_panel-buttons"><a class="button button_low button_white" href="#">Upload Files</a><a class="button button_low button_grey" href="#">Select All</a></div>
+            <div class="category_page_panel-menu">
+              <ul>
+                <li><a href="#"><i class="ssgfont ssgfont-V"></i>Pin to Folder</a></li>
+                <li><a href="#"><i class="ssgfont ssgfont-m"></i>Download files</a></li>
+                <li><a href="#"><i class="ssgfont ssgfont-k"></i>Share files</a></li>
+                <li><a href="#"><i class="ssgfont ssgfont-n"></i>Setting</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal fade" id="download" role="dialog">
+      <div class="modal-dialog modal-dialog-centered popup_content">
+        <div class="modal-content">
+          <div class="popup_close" data-dismiss="modal"></div>
+          <div class="popup_title">Download Assets</div>
+          <form>
+            <div class="popup_inner">
+              <div class="popup-group">
+                <div class="popup_group popup_group-fiolet">
+                  <div class="popup_group-title">Rendition</div>
+                  <select>
+                    <option>Hi-Res</option>
+                    <option>Normal-Res</option>
+                    <option>Low-Res</option>
+                  </select>
+                </div>
+                <div class="popup_group_comment">– Select the rendition to download</div>
+              </div>
+              <div class="popup-group">
+                <div class="popup_group">
+                  <div class="popup_group-title">Transformation</div>
+                  <select>
+                    <option>JPG - 150 dpi</option>
+                    <option>JPG - 96 dpi</option>
+                    <option>JPG - 384 dpi</option>
+                  </select>
+                </div>
+                <div class="popup_group_comment">– Select the transformation to apply on the rendition</div>
+              </div>
+              <div class="popup-group">
+                <div class="popup_group">
+                  <div class="popup_group-title">File Name (zip)</div>
+                  <input type="text" value="Name">
+                </div>
+                <div class="popup_group_comment">– Enter a name for the zip download (optional)</div>
+              </div>
+              <div class="popup-group">
+                <div class="popup_group-title-small">Assets to be downloaded</div>
+                <div class="popup-filelist">
+                  <ul>
+                    <li class="popup-filelist-alert">1001_Print.eps</li>
+                    <li>1002_Print.eps</li>
+                    <li>1003_Print.eps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="popup-group">
+                <div class="popup-group-zip">
+                  <label class="popup-group-checkbox">
+                    <input type="checkbox"><span>Create .zip</span>
+                  </label>
+                  <div class="popup-group-permission">Permission Denied</div>
+                </div>
+              </div>
+            </div>
+            <div class="popup_bottom"><a class="button button_big button_black" href="#">Download All</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="share" role="dialog">
+      <div class="modal-dialog modal-dialog-centered popup_content">
+        <div class="modal-content">
+          <div class="popup_close" data-dismiss="modal"></div>
+          <div class="popup_title">Share Assets</div>
+          <div class="popupnav nav"><a class="active" data-toggle="tab" href="#createnew">Create new</a><a data-toggle="tab" href="#chooseshare">Choose share to use</a></div>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="createnew">
+              <form>
+                <div class="popup_inner">
+                  <div class="popup-group">
+                    <div class="popup_group popup_group-fiolet">
+                      <div class="popup_group-title">File Name</div>
+                      <input type="text" value="Printing file 2018">
+                    </div>
+                  </div>
+                  <div class="popup-group">
+                    <div class="popup_group">
+                      <div class="popup_group-title">Expiration Date</div>
+                      <select>
+                        <option>04.06.2018</option>
+                        <option>11.06.2018</option>
+                        <option>18.06.2018</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="popup-group">
+                    <div class="popup-group-zip">
+                      <label class="popup-group-checkbox">
+                        <input type="checkbox" checked><span>Copy share URL</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup_bottom"><a class="button button_big button_black" href="#">Add All</a></div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="chooseshare">
+              <form>
+                <div class="popup_inner">
+                  <div class="popup-group">
+                    <div class="popup_group">
+                      <div class="popup_group-title">Text</div>
+                      <select>
+                        <option>Some text</option>
+                        <option>11.06.2018</option>
+                        <option>18.06.2018</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="popup-group">
+                    <div class="popup_group-title-small">Assets to be downloaded</div>
+                    <div class="popup-filelist">
+                      <ul>
+                        <li class="selected">1001_Print.eps</li>
+                        <li>1002_Print.eps</li>
+                        <li>1003_Print.eps</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup_bottom"><a class="button button_big button_black" href="#">Add All</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+.workflow_company-title {
+    color: #adadbd;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+}
+
+.workflow_company_nav {
+    border-bottom: 1px solid #e1e4eb;
+    padding-bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 8px
+}
+
+.workflow_company_nav::-webkit-scrollbar {
+    width: 0
+}
+
+.workflow_company_nav a {
+    color: #adadbd;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 24px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+
+}
+
+.workflow_company_nav a:hover {
+    color: #5081fb;
+}
+
+.workflow_company_nav a:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #5081fb;
+    position: absolute;
+    left: 0;
+    bottom: -17px
+}
+
+.workflow_company_nav a:last-child {
+    margin-right: 0
+}
+
+.workflow_company_detail_table {
+    width: 100%;
+}
+
+.workflow_company_detail_table-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1d1e;
+    line-height: 36px;
+    min-height: 36px;
+}
+
+.workflow_company_detail_table thead th {
+    padding: 36px 0
+}
+
+.workflow_company_detail_table thead .button {
+    min-width: 64px;
+}
+
+.workflow_company_detail_table td {
+    font-size: 16px;
+    color: #adadbd;
+    text-align: left;
+    padding: 3px 0
+}
+
+.workflow_company_detail_table td.workflow_company_detail_table_bold {
+    color: #1d1d1e;
+
+}
+
+.workflow_company_checkbox {
+    display: block;
+    cursor: pointer;
+
+}
+
+.workflow_company_checkbox input {
+    display: none !important;
+}
+
+.workflow_company_checkbox span {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e1e4eb;
+    border-radius: 3px;
+    color: transparent;
+}
+
+.workflow_company_checkbox span i {
+    line-height: 16px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.workflow_company_checkbox input:checked + span {
+    border-color: #5081fb;
+    color: #5081fb;
+}
+
+.workflow_company_group {
+    border: 1px solid #eceef1;
+    -webkit-box-shadow: 0 11px 13px rgba(194, 200, 210, 0.42);
+    box-shadow: 0 11px 13px rgba(194, 200, 210, 0.42);
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.workflow_company_group-title {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 24px;
+    border-bottom: 1px solid #e1e4eb;
+    margin-bottom: 12px;
+    position: relative;
+    padding-right: 36px
+}
+
+.workflow_company_group-table {
+    padding: 0 24px
+}
+
+.workflow_company_group-table table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.workflow_company_group-table table thead {
+    background: #edeff3
+}
+
+.workflow_company_group-table table th {
+    font-size: 14px;
+    padding: 14px 16px;
+    font-weight: 400;
+}
+
+.workflow_company_group-table table tr:first-child td {
+    padding-top: 16px;
+}
+
+.workflow_company_group-table table td {
+    font-size: 14px;
+    padding: 1px 16px;
+    width: 15%;
+}
+
+.workflow_company_group-table2 table tr {
+    position: relative;
+    z-index: 1;
+}
+
+.workflow_company_group-table2 table td {
+    width: auto;
+    position: relative;
+    z-index: initial;
+    font-size: 12px;
+}
+
+.workflow_company_group-table table td.first {
+    width: 25%;
+}
+
+.workflow_company_group-status {
+    display: block;
+    position: relative;
+    padding-left: 14px;
+}
+
+.workflow_company_group-status:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.workflow_company_group-status.success {
+    color: #60bd4d;
+}
+
+.workflow_company_group-status.success:before {
+    background: #60bd4d;
+}
+
+.workflow_company_buttons {
+    text-align: right;
+    margin-top: 24px
+}
+
+.workflow_company_buttons a {
+    margin-left: 16px;
+}
+
+.workflow_company_buttons a:first-child {
+    margin-left: 0
+}
+
+.workflow_company_group + .workflow_company_group {
+    margin-top: 24px;
+}
+
+.workflow_company_buttons + .workflow_company_group {
+    margin-top: 24px
+}
+
+.workflow_company-created {
+    margin-top: 30px;
+    margin-bottom: 44px
+}
+
+.workflow_company_created {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1d1d1e;
+}
+
+.workflow_company_created span {
+    color: #adadbd;
+}
+
+.workflow_company_group_absolute {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -24px;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.workflow_company_main {
+    position: relative;
+    width: 100%;
+}
+
+.workflow_company_group-table table .yesmobile {
+    display: none;
+}
+
+.workflow_company_group-table-mobile {
+    display: none;
+}
+
+.workflow_company_detail_table-nohead-visible {
+    color: #adadbd;
+    border: 1px solid #e1e4eb;
+    margin-top: 24px;
+    display: none;
+
+}
+
+.workflow_company_group-title-menu {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    z-index: 2;
+}
+
+td .workflow_company_group-title_menu{
+    top: 36px
+    
+    
+}
+
+td .workflow_company_group-title_menu_opener {
+    color: #adadbd;
+}
+
+.workflow_company_group-title_menu_opener {
+    font-size: 19px;
+    color: #1d1d1e;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.workflow_company_group-title_menu {
+    -webkit-box-shadow: 0 6px 13px rgba(194, 200, 210, 0.39);
+    box-shadow: 0 6px 13px rgba(194, 200, 210, 0.39);
+    background: #fff;
+    border-radius: 10px;
+    width: 128px;
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    margin-left: -64px;
+    padding: 18px 24px 12px;
+    display: none;    
+    text-align: left;
+    z-index: 10;
+}
+
+.workflow_company_group-title_menu a {
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000006;
+
+}
+
+
+.workflow_company_group-title_menu a + a {
+    margin-top: 13px
+}
+
+.workflow_company_group-title_menu a i {
+    width: 26px;
+    font-size: 21px;
+}
+
+.workflow_company_group-table-empty {
+    background: #edeff3;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px
+}
+
+.workflow_company_group-table-link {
+    width: 100%;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.workflow_company_group-table-link a {
+    display: block;
+    width: 100%;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.workflow_company_usermodified {
+    display: block;
+    padding-left: 36px;
+    position: relative;
+    white-space: nowrap;
+    line-height: 28px
+}
+
+.workflow_company_usermodified_img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -12px
+}
+
+.workflow_company_group-table-Mobile {
+    display: none
+}
+
+
+
+@media(max-width: 1279px) {
+    .workflow_company_detail_table-title {
+        min-height: 0
+    }
+
+    .workflow_company_detail_table-nohead thead th {
+        padding: 0
+    }
+
+    .workflow_company_detail_table td:first-child {
+        width: 65%
+    }
+
+    .workflow_company_group-table table .nomobile {
+        display: none;
+    }
+
+    .workflow_company_group-table table .yesmobile {
+        display: table-cell
+    }
+
+    .workflow_company_group-table table td {
+        width: 28%;
+    }
+    
+     .workflow_company_group-table2 table td {
+        width: auto;
+         max-width: 1px
+    }
+
+    .workflow_company_group-table table td.first {
+        width: 44%
+    }
+
+    .workflow_company_group-table table tr:last-child td {
+        padding-bottom: 16px
+    }
+
+    .workflow_company_group {
+        padding-bottom: 0
+    }
+
+    .workflow_company_group_absolute {
+        opacity: 0
+    }
+
+    .workflow_company_group-table-mobile {
+        display: table
+    }
+    
+    .workflow_company_group-table-empty {
+        margin-bottom: 15px
+    }
+    
+  
+    
+    .workflow_company_group-title_menu {
+        right: 0;
+        left: auto;
+        margin-left: 0
+    }
+    
+    td .workflow_company_group-title_menu {       
+        left: 0;
+       
+    }
+}
+
+@media(max-width: 767px) {
+
+    .workflow_company_group-title,
+    .workflow_company_group-table {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .workflow_company_detail_table,
+    .workflow_company_detail_table thead,
+    .workflow_company_detail_table th,
+    .workflow_company_detail_table tbody,
+    .workflow_company_detail_table tr,
+    .workflow_company_detail_table td {
+        display: block;
+    }
+
+    .workflow_company_detail_table thead th {
+        padding: 0 0;
+    }
+
+    .workflow_company_detail_table thead tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+
+    .workflow_company_detail_table-nohead-visible {
+        display: inline-block;
+    }
+
+
+    .workflow_company_detail_table-nohead {
+        display: none;
+    }
+
+    .workflow_company_group-table table th,
+    .workflow_company_group-table table td {
+        padding-left: 12px;
+        padding-right: 12px
+    }
+    
+    .notablet {
+        display: none
+    }
+    
+    .workflow_company_group-table-Mobile {
+        display: table
+    }
+    
+    .workflow_company_nav a {
+        font-size: 12px;
+    }
+    
+    .workflow_company_group-table table th {
+        font-size: 12px;
+    }
+
+}

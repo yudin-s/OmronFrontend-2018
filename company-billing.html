@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/companybiling.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list aside_list-small">
+          <div class="aside_list_search">
+            <form>
+              <button></button>
+              <input type="text" placeholder="Search">
+            </form><a class="aside_list_search-add" href="#"></a>
+          </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-f"></i><span class="title">Clients</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-g"></i><span class="title">Approved files</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-x"></i><span class="title">Files in queue</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-i"></i><span class="title">Job status</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-k"></i><span class="title">Send for approval</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-q"></i><span class="title">Dashboard</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-y"></i><span class="title">Contacts</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-z"></i><span class="title">Items</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-A"></i><span class="title">Sales Orders</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-B"></i><span class="title">Packages</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-C"></i><span class="title">Invoices</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-D"></i><span class="title">Purchase Orders</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-E"></i><span class="title">Bills</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-F"></i><span class="title">Integration</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-G"></i><span class="title">Reports</span></div>
+                    </div>
+                    <div class="aside_list-group">
+                      <div class="aside_list-title"><i class="ssgfont ssgfont-H"></i><span class="title">Job Schedule</span></div>
+                    </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="min-height contentflex">
+          <div class="companybiling content content-rp">
+            <div class="contentflex contentflexcenter">
+              <h1>Deason Recycling Equipment Solutions - New Deal</h1><span class="rightpanel-opener"><i class="ssgfont ssgfont-I"></i></span>
+            </div>
+            <div class="companybiling_top contentflex contentflexcenter">
+              <div class="companybiling_topbuttons"><a class="button button_fiolet button_fiolet_shadow" href="#">Rename</a><a class="button button_transparent" href="#">Save</a></div>
+              <div class="companybiling_topamount">
+                <div class="companybiling_topwmenu">Amount<i class="ssgfont ssgfont-J"></i></div>
+                <div class="companybiling_top_amount">$1500</div>
+              </div>
+            </div>
+            <div class="companybiling_inputandsteps">
+              <div class="companybiling_inputs">
+                <div class="companybiling_inputs-select">
+                  <select class="companybiling-select">
+                    <option>SCG: New Sales</option>
+                    <option>SCG: New Sales2</option>
+                    <option>SCG: New Sales3</option>
+                  </select>
+                </div>
+                <div class="companybiling_inputs-date">
+                  <div class="companybiling_topwmenu">Close Date<i class="ssgfont ssgfont-J"></i></div>
+                  <div class="companybiling_inputs-date-input">
+                    <input type="text" value="08.05.2018" id="datepicker">
+                  </div>
+                </div>
+              </div>
+              <div class="companybiling_steps">
+                <div class="companybiling_step active">Inbound Or Located Contact</div>
+                <div class="companybiling_step">Step 3</div>
+                <div class="companybiling_step">Step 4</div>
+              </div>
+            </div>
+            <div class="companybiling_main">
+              <div class="companybiling_main-input">
+                <div class="companybiling_main-input-title">Notes</div>
+                <div class="companybiling_main-input-header"><a class="active" href="#"><i class="ssgfont ssgfont-W"></i>New Note</a><a href="#"><i class="ssgfont ssgfont-X"></i>E-mail</a><a href="#"><i class="ssgfont ssgfont-Y"></i>Call</a><a href="#"><i class="ssgfont ssgfont-Z"></i>Log Activity</a><a href="#"><i class="ssgfont ssgfont-0"></i>Create Task</a><a href="#"><i class="ssgfont ssgfont-1"></i>Calendar</a></div>
+                <div class="companybiling_main-input-textarea">
+                  <textarea placeholder="Typing..."></textarea>
+                  <div class="companybiling_main-input-textarea-buttons">
+                    <div class="companybiling_main-input-textarea-buttons-left"><a href="#"><i class="ssgfont ssgfont-2"></i></a><a href="#"><i class="ssgfont ssgfont-3"></i></a><a href="#"><i class="ssgfont ssgfont-4"></i></a></div>
+                    <div class="companybiling_main-input-textarea-buttons-right">
+                      <div class="companybiling_main-input-symbols">0:00/10:23</div>
+                      <label class="companybiling_main-input-textarea-file">
+                        <input type="file"><span>Choose file</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="companybiling_main_tabs">
+                <div class="nav"><a class="active" href="#Activity" data-toggle="tab">Activity</a><a href="#Notes" data-toggle="tab">Notes</a><a href="#Emails" data-toggle="tab">Emails</a><a href="#Calls" data-toggle="tab">Calls</a><a href="#Tasks" data-toggle="tab">Tasks</a></div>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="Activity">
+                    <div class="companybiling_main_tab_activity">
+                      <div class="companybiling_main_tab_activity-top">
+                        <select class="companybiling-select">
+                          <option>Filter Activity (8/9)</option>
+                          <option>Filter Activity (9/9)</option>
+                          <option>Filter Activity (7/9)</option>
+                        </select>
+                        <div class="companybiling_main_tab_activity-title">June 2018</div>
+                      </div>
+                      <div class="companybiling_main_tab_activity-row">
+                        <div class="companybiling_main_tab_activity_row-status ok"></div>
+                        <div class="companybiling_main_tab_activity_content">
+                          <div class="companybiling_main_tab_activity_content-icon">NO</div>
+                          <div class="companybiling_main_tab_activity_content-text">
+                            <p class="small">Deal moved to inbound Or located Contact</p>
+                            <p class="extrasmall colorgrey">Deal moved to inbound Or located Contact</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="companybiling_main_tab_activity-row">
+                        <div class="companybiling_main_tab_activity_row-status add"></div>
+                        <div class="companybiling_main_tab_activity_content">
+                          <div class="companybiling_main_tab_activity_content-text">
+                            <p class="small">Deason Recycling Equipment Solutions - New Deal we Created</p>
+                            <p class="extrasmall colorgrey">Jun 16 at 08:16 pm</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Notes">temp Notes</div>
+                  <div class="tab-pane fade" id="Emails">temp Emails</div>
+                  <div class="tab-pane fade" id="Calls">temp Calls</div>
+                  <div class="tab-pane fade" id="Tasks">temp Tasks</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="companybiling_rightpanel rightpanel">
+            <div class="companybiling_rightpanel-group">
+              <div class="companybiling_rightpanel_group-title">About Season Recycling Equipment</div>
+              <div class="companybiling_rightpanel-group-content" style="display: block">
+                <div class="companybiling_rightpanel-group-content-menu"><i class="ssgfont ssgfont-J"></i></div>
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall colorgrey">Deal owner</p>
+                  <p class="extrasmall">Chris T.</p>
+                </div>
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall colorgrey">Deal Description</p>
+                  <p class="extrasmall">SEO - $399</p>
+                </div>
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall colorgrey">Pipeline</p>
+                  <p class="extrasmall">SCG-New Sales</p>
+                </div>
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall colorgrey">Service Type</p>
+                  <p class="extrasmall">Noxster: SEO</p>
+                </div>
+                <div class="companybiling_rightpanel_buttons"><a class="companybiling_rightpanel_button" href="#">View all properties</a><a class="companybiling_rightpanel_button" href="#">View property history</a></div>
+              </div>
+            </div>
+            <div class="companybiling_rightpanel-group">
+              <div class="companybiling_rightpanel_group-title">Products</div>
+              <div class="companybiling_rightpanel-group-content" style="display: block">
+                <div class="companybiling_rightpanel-group-content-menu"><i class="ssgfont ssgfont-J"></i></div>
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall colorgrey">Seo Company</p>
+                  <p class="extrasmall"><span class="colorfiolet">$1500</span>x 1</p>
+                </div>
+                <div class="companybiling_rightpanel_buttons"><a class="companybiling_rightpanel_button" href="#">Edit Products</a><a class="companybiling_rightpanel_button" href="#">Create quote</a></div>
+              </div>
+            </div>
+            <div class="companybiling_rightpanel-group">
+              <div class="companybiling_rightpanel_group-title">Tickets</div>
+              <div class="companybiling_rightpanel-group-content" style="display: block">
+                <div class="companybiling_rightpanel_group">
+                  <p class="extrasmall">Log customer issus as tickets that can be assigned to members of your team.</p>
+                  <div class="companybiling_rightpanel_buttons"><a class="companybiling_rightpanel_button" href="#">Edit Products</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

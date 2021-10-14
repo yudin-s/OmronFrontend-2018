@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Omron</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/rmamessage.css" rel="stylesheet">
+    <link href="css/todolistandtasks.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+  </head>
+  <body>
+    <aside>
+      <div class="aside_mobile_bg"></div>
+      <div class="aside_inner"><span class="aside-opener"></span>
+        <div class="aside-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="aside_list">
+          <div class="aside_list-group active">
+            <div class="aside_list-title"><i class="ssgfont ssgfont-q"></i><span class="title">Home</span></div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-2"></i><span class="title">Product</span><span class="aside_list-number">30</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-0"></i><a href="#">Manuals</a></li>
+                <li><i class="omronfont omronfont-7"></i><a href="#">CAD</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-3"></i><span class="title">Application</span><span class="aside_list-number">24</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-8"></i><a href="#">Notes</a></li>
+                <li><i class="omronfont omronfont-5"></i><a href="#">Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="omronfont omronfont-1"></i><span class="title">Training Material</span><span class="aside_list-number">6</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="ssgfont ssgfont-f"></i><a href="#">Beginners</a></li>
+                <li><i class="omronfont omronfont-6"></i><a href="#">Advansed</a></li>
+                <li></li>
+                <li><i class="ssgfont ssgfont-i"></i><a href="#">Tutorials</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside_list-group">
+            <div class="aside_list-title aside_list-title-opener"><i class="ssgfont ssgfont-n"></i><span class="title">R & D</span></div>
+            <div class="aside_list-list">
+              <ul>
+                <li><i class="omronfont omronfont-4"></i><a href="#">Software</a></li>
+                <li><i class="omronfont omronfont-9"></i><a href="#">Firmware</a></li>
+                <li><i class="omronfont omronfont-a"></i><a href="#">Hardware</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <section class="main_section main_section-leftpanel">
+      <header class="clearfix">
+        <div class="header_mobile-logo"><a class="logo" href="#" style="background-image: url(img/omron_logo.png)"></a></div>
+        <div class="header_right clearfix">
+          <div class="header_burger"><span></span><span></span><span></span></div>
+          <div class="header_main">
+            <ul>
+              <li class="header_adobe"><a href="#Support" id="support_menu_opener"><i class="ssgfont ssgfont-c"></i><span class="header_nomobile">Support</span></a>
+                <div class="header_support_menu" id="support_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-fiolet">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_title">Your Item Shipping</div>
+                    <div class="header_support_menu_text">
+                      <div class="header_support_menu_order header_support_menu-red">Order #1234</div>Has been<span> shipped </span>and is now
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-red"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_support_menu_title">Item Available!</div>
+                    <div class="header_support_menu_text">An item you Liked is now back in stock</div>
+                    <div class="header_support_menu_status"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_status active"><a href="#"><i class="ssgfont ssgfont-b"></i><span class="header_nomobile">Status</span></a></li>
+              <li class="header_notifications"><a href="#notifications" id="notifications_menu_opener"><i class="ssgfont ssgfont-a"></i><span class="header_nomobile">Notifications</span></a>
+                <div class="header_support_menu" id="notifications_menu">
+                  <div class="header_support_menu_row">
+                    <div class="header_support_menu_tabs"><a href="#">Unread</a><a class="active" href="#">Show All</a></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>add folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>top site
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-fiolet">Yoko-web</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                  <div class="header_support_menu_row readed">
+                    <div class="header_notifications_menu_text">
+                      <div class="header_support_menu_name">Stanislav Khromykh</div>invited you to edits the folder
+                      <div class="header_support_menu_project header_support_menu_project-red">printing.png</div>
+                    </div>
+                    <div class="header_support_menu_status header_support_menu-fiolet"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="header_folder"><a href="#" id="folder_menu_opener"><i class="ssgfont ssgfont-d"></i><span class="header_notab">Folder</span><span class="header_number">30</span></a>
+                <div class="header_main_menu" id="folder_menu">
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/aside_queue_item-img.jpg)"></div>
+                    <div class="header_main_menu_name">Approver file</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefont.png)"></div>
+                    <div class="header_main_menu_name">Roboto Font</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_row">
+                    <div class="header_main_menu_icon" style="background-image: url(img/filetypefolder.png)"></div>
+                    <div class="header_main_menu_name">Printing</div>
+                    <div class="header_main_menu_buttons">
+                      <div class="header_main_menu_buttons">
+                        <label class="header_main_menu-file">
+                          <input type="file"><span><i class="ssgfont ssgfont-Q"></i></span>
+                        </label><a class="header_main_menu-delete" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header_main_menu_bottom"><a class="button button_black button_low" href="#">Checkout</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header_user">
+            <div class="header_user-photo" style="background-image: url(img/header_user.png)"></div>
+            <div class="header_user-name">Stanislav Khromykh</div>
+            <span class="header_user-menuopener"></span>
+            <div class="header_user-menu">
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="active"><a href="#">Profile setting</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">Creat new job</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li><a href="#">Yor files</a></li>
+                  <li><a href="#">Shipping status</a></li>
+                  <li><a href="#">Analytics</a></li>
+                  <li><a href="#">Share</a></li>
+                </ul>
+              </div>
+              <div class="header_user-menu-group">
+                <ul>
+                  <li class="header_user-logout"><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_left clearfix">
+          <div class="header_left-select">
+            <div class="header_left-select-icon"></div>
+            <select>
+              <option>DASHBOARD</option>
+              <option>DASHBOARD2</option>
+              <option>DASHBOARD3</option>
+            </select>
+          </div>
+          <div class="header_left-icon header_left-add"><a href="#"></a></div>
+          <div class="header_left-icon header_left-search"><a href="#"></a></div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="min-height contentflex">
+          <div class="content content-rp" style="background-color: #f7f9fc">
+            <div class="contentflex contentflexcenter">
+              <h1>Work In Progress</h1><span class="rightpanel-opener"><i class="ssgfont ssgfont-I"></i></span>
+            </div>
+            <div class="todolist_main">
+              <div class="title">Recent Activity</div>
+              <div class="contentflex contentflexcenter todolist_main-top">
+                <div class="todolist_newtask">
+                  <form>
+                    <input type="text" placeholder="Type a new task">
+                    <button>OK</button>
+                  </form>
+                </div>
+                <div class="todolist_search">
+                  <form>
+                    <button></button>
+                    <input type="text" placeholder="search">
+                  </form>
+                </div>
+              </div>
+              <div class="todolist_newtask_table">
+                <table class="todolist_newtask_table-desktop">
+                  <thead>
+                    <tr>
+                      <th>Project Name</th>
+                      <th>Action</th>
+                      <th>Status</th>
+                      <th>International</th>
+                      <th>Latest Date Modified</th>
+                      <th>Mechicanical File Due</th>
+                      <th class="tac">Agency</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active">
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Hercules/BD/Inserts
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-status">Planned<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox" checked><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> gnah studios</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Baywatch DVD Cover
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-status">In Progress<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> NBI</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Project Run Away
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-status">Approval Waiting<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="December 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> SCG</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="todolist_newtask_table-tablet">
+                  <thead>
+                    <tr>
+                      <th>Project Name</th>
+                      <th class="tac">Action</th>
+                      <th class="tac">Status</th>
+                      <th class="tac">International</th>
+                      <th class="tac">Agency</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active">
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Hercules/BD/Inserts
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status">Planned<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox" checked><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> gnah studios</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="active">
+                      <td colspan="6">
+                        <div class="todolist_newtask_table_tablet-duedate">
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Latest Date<span>Modified</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Mechicanical<span>File Due</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Baywatch DVD Cover
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status">In Progress<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> NBI</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <div class="todolist_newtask_table_tablet-duedate">
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Latest Date<span>Modified</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Mechicanical<span>File Due</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="todolist_newtask_table-project">
+                        <div class="todolist_newtask_table_project">Project Run Away
+                          <div class="todolist_newtask_table_project-preview">
+                            <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                            <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                            <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                            <div class="todolist_newtask_table_project-preview-agency_img">
+                              <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                            </div>
+                            <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-status">Approval Waiting<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="tac">
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td class="tac"> SCG</td>
+                      <td>
+                        <div class="todolist_newtask_table-status todolist_newtask_table-action"><i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <div class="todolist_newtask_table_tablet-duedate">
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Latest Date<span>Modified</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="todolist_newtask_table_tablet_duedate">
+                            <div class="todolist_newtask_table_tablet_duedate-title">Mechicanical<span>File Due</span></div>
+                            <div class="todolist_newtask_table-input">
+                              <label>
+                                <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="todolist_newtask_table-mobile">
+                  <div class="todolist_newtask_table_mobile_head active">
+                    <div class="todolist_newtask_table_mobile-head todolist_newtask_table_project">Hercules/BD/Inserts
+                      <div class="todolist_newtask_table_project-preview">
+                        <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                        <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                        <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                        <div class="todolist_newtask_table_project-preview-agency_img">
+                          <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                        </div>
+                        <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                      </div>
+                    </div>
+                    <div class="todolist_actionmenu todolist_newtask_table-status">Action<i class="ssgfont ssgfont-J"></i>
+                      <div class="todolist_newtask_table-status-menu">
+                        <ul>
+                          <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="todolist_newtask_table_mobile_tr active">
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_mobile-td">
+                        <div class="todolist_newtask_table-status">Planned<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="todolist_newtask_table_mobile-td"><span class="todolist_newtask_table-checkbox-title">International:</span>
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox" checked><span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Recent<span>Activity</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Mechanical<span>Due Date</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="todolist_newtask_table_mobile_head">
+                    <div class="todolist_newtask_table_mobile-head todolist_newtask_table_project">Baywatch DVD Cover
+                      <div class="todolist_newtask_table_project-preview">
+                        <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                        <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                        <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                        <div class="todolist_newtask_table_project-preview-agency_img">
+                          <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                        </div>
+                        <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                      </div>
+                    </div>
+                    <div class="todolist_actionmenu todolist_newtask_table-status">Action<i class="ssgfont ssgfont-J"></i>
+                      <div class="todolist_newtask_table-status-menu">
+                        <ul>
+                          <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="todolist_newtask_table_mobile_tr">
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_mobile-td">
+                        <div class="todolist_newtask_table-status">In Progress<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="todolist_newtask_table_mobile-td"><span class="todolist_newtask_table-checkbox-title">International:</span>
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Recent<span>Activity</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Mechanical<span>Due Date</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="todolist_newtask_table_mobile_head">
+                    <div class="todolist_newtask_table_mobile-head todolist_newtask_table_project">Project Run Away
+                      <div class="todolist_newtask_table_project-preview">
+                        <div class="todolist_newtask_table_project-preview-img" style="background-image: url(img/todolist_newtask_table_project-preview.jpg)"></div>
+                        <div class="todolist_newtask_table_project-preview-seasons">Billions Season 5 DVD Inserts</div>
+                        <div class="todolist_newtask_table_project-preview-agency">Agency</div>
+                        <div class="todolist_newtask_table_project-preview-agency_img">
+                          <div class="todolist_newtask_table_project-preview-agency-img" style="background-image: url(img/gnahstudios.png)"></div>
+                        </div>
+                        <div class="todolist_newtask_table_project-preview-agency-button"><a class="button button_fiolet" href="#">View File</a></div>
+                      </div>
+                    </div>
+                    <div class="todolist_actionmenu todolist_newtask_table-status">Action<i class="ssgfont ssgfont-J"></i>
+                      <div class="todolist_newtask_table-status-menu">
+                        <ul>
+                          <li><a href="#"><i class="ssgfont ssgfont-and"></i>View</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-star"></i>Edit</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brl"></i>Remind</a></li>
+                          <li><a href="#"><i class="ssgfont ssgfont-brr"></i>Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="todolist_newtask_table_mobile_tr">
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_mobile-td">
+                        <div class="todolist_newtask_table-status">Approval Waiting<i class="ssgfont ssgfont-J"></i>
+                          <div class="todolist_newtask_table-status-menu">
+                            <ul>
+                              <li><a href="#"><i class="ssgfont ssgfont-6"></i>In progress</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-7"></i>Waiting for review</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-8"></i>Paused</a></li>
+                              <li><a href="#"><i class="ssgfont ssgfont-K"></i>Completed</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="todolist_newtask_table_mobile-td"><span class="todolist_newtask_table-checkbox-title">International:</span>
+                        <div class="todolist_newtask_table-checkbox">
+                          <label>
+                            <input type="checkbox"><span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Recent<span>Activity</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="todolist_newtask_table_mobile-tr">
+                      <div class="todolist_newtask_table_tablet_duedate">
+                        <div class="todolist_newtask_table_tablet_duedate-title">Mechanical<span>Due Date</span></div>
+                        <div class="todolist_newtask_table-input">
+                          <label>
+                            <input class="datepicker2" type="text" value="Dec. 18 2018"><i class="ssgfont ssgfont-J"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="todolist_newtask-buttons contentflex contentflexcenter"><a class="button button_fiolet button_fiolet_shadow" href="#"><span class="icon"></span>Add</a><a class="rmamessagepage_item_refresh" href="#"></a><a class="rmamessagepage_item_burger" href="#"></a></div>
+            </div>
+          </div>
+          <div class="rmamessagepagepanel rightpanel">
+            <div class="rmamessagepagepanel-filter">
+              <ul>
+                <li><a href="#"><i class="ssgfont ssgfont-M"></i>Filter</a></li>
+                <li><a href="#"><i class="ssgfont ssgfont-N"></i>Informers</a></li>
+                <li><a href="#"><i class="ssgfont ssgfont-I"></i>More</a></li>
+              </ul>
+            </div>
+            <div class="rmamessagepagepanel-actions">
+              <div class="rmamessagepagepanel-actions-title">Actions</div>
+              <div class="rmamessagepagepanel-action">
+                <div class="rmamessagepagepanel-action-icon" style="background-color: #f6c747"></div>
+                <div class="rmamessagepagepanel-action-text">
+                  <p class="extrasmall">Payment authorization for website / blog update NPN phase II</p>
+                  <p class="extrasmall colorgrey">3 hours ago</p>
+                </div>
+              </div>
+              <div class="rmamessagepagepanel-action">
+                <div class="rmamessagepagepanel-action-icon" style="background-color: #5081fb"></div>
+                <div class="rmamessagepagepanel-action-text">
+                  <p class="extrasmall">Payment authorization for website / blog update NPN phase II</p>
+                  <p class="extrasmall colorgrey">3 hours ago</p>
+                </div>
+              </div>
+              <div class="rmamessagepagepanel-action"><a class="rmamessagepagepanel-action-other" href="#">Other actions...</a></div>
+            </div>
+          </div>
+          <div class="rightpanel-mobilebg"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/masonry.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>

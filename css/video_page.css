@@ -1,0 +1,223 @@
+.video_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.video_page-sidepanel {
+    width: 480px;
+    border-left: 1px solid #e1e4eb;
+    background: #fff;
+    z-index: 200;
+    padding-left: 0;
+    padding-right: 0
+}
+
+.video_page-sidepanel-title {
+    font-size: 24px;
+    padding: 22px 36px;
+    border-bottom: 1px solid #e1e4eb;
+}
+
+.video_page-sidepanel-item {
+    padding: 30px 48px;
+    border-top: 1px solid #e1e4eb;
+}
+
+.video_page-sidepanel-img {
+    position: relative;
+    width: 100%;
+    height: 236px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video_page-sidepanel-playbutton {
+    display: block;
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -9px;
+    margin-top: -11px;
+    background: url(../img/sidepanel-playbutton.png) no-repeat center / contain;
+}
+
+.video_page-sidepanel-videoname {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+}
+
+.video_page-sidepanel-buttons {
+    padding: 0 48px;
+}
+
+.video_page-sidepanel-buttons .button {
+    width: 100%;
+}
+
+.video_page-sidepanel-buttons .button + .button {
+    margin-top: 10px;
+}
+
+.video_page-sidepanel-buttons-border {
+    padding: 36px 0;
+    border-top: 1px solid #e1e4eb;
+}
+
+.video_page-sidepanel-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #adadbd;
+    text-align: center;
+    padding: 8px 0 60px
+}
+
+.video_page-sidepanel-text span {
+    color: #5081fb;
+}
+
+.video_page-sidepanel-cancel {
+    text-align: center;
+    border-top: 1px solid #e1e4eb;
+    color: #adadbd;
+    font-size: 16px;
+    padding: 26px 0 27px;
+}
+
+.video_page-main {
+    width: calc(100% - 480px);
+    padding: 60px 60px;
+}
+
+.video_page-player {
+    width: 100%;
+    height: 730px;
+    margin-bottom: 36px;
+}
+
+.video_page-player iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video_page-player-buttons {
+    border-bottom: 1px solid #e1e4eb;
+    text-align: right;
+    padding: 12px 0
+}
+
+.video_page-player-buttons .button_block {
+    margin-left: 6px;
+}
+
+.video_page-player-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.video_page-player-numbervideo {
+    color: #adadbd;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 12px;
+}
+
+.video_page-player-list-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: url(../img/video_page-player-list-button.png) no-repeat center / contain;
+}
+
+.video_page-player-list-prev {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+@media(max-width: 1439px) {
+    .video_page-sidepanel {
+        width: 360px;
+    }
+
+    .video_page-main {
+        width: calc(100% - 360px);
+        padding: 60px 24px;
+    }
+
+    .video_page-sidepanel-title {
+        padding: 22px 24px;
+    }
+
+    .video_page-sidepanel-item {
+        padding: 30px 24px;
+    }
+    .video_page-sidepanel-buttons {
+        padding: 0 24px;
+    }
+    .video_page-player {
+        height: 480px;
+    }
+}
+
+@media(max-width: 1279px) {
+    .video_page {
+        display: block;
+        position: relative;
+    }
+
+    .video_page-main {
+        width: 100%;
+        padding: 36px 24px;
+    }
+    
+    .video_page-sidepanel {
+        width: 384px;
+        position: absolute;
+        top: 0;        
+    }
+}
+
+@media(max-width: 479px) {
+    .video_page-sidepanel {
+        width: 320px;
+    }
+    .video_page-sidepanel-img {
+        height: 192px
+    }
+    
+    .video_page-player {
+    height: 288px;
+}
+}
+
+@media(max-width: 359px) {
+    .video_page-sidepanel {
+        width: 320px;
+    }
+    
+    .video_page-sidepanel {
+        width: 264px;
+    }
+    
+    .video_page-sidepanel-item {
+    padding: 24px 12px;
+}
+}

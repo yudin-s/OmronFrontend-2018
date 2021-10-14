@@ -1,0 +1,490 @@
+.trafficdashboard_top {
+    min-height: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trafficdashboard_top_buttons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trafficdashboard_top_buttons ul li {
+    margin-left: 6px;
+}
+
+.trafficdashboard_top_buttons ul li a {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    border: 2px solid #e1e4eb;
+    border-radius: 5px;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 12px;
+    color: #adadbd;
+    white-space: nowrap;
+}
+
+.trafficdashboard_top_buttons ul li.active a,
+.trafficdashboard_top_buttons ul li a:hover {
+    color: #5081fb;
+    text-shadow: 0 0 7px rgba(99, 58, 253, 0.35);
+    border: 2px solid #5081fb;
+    -webkit-box-shadow: 0 0 7px rgba(99, 58, 253, 0.35);
+    box-shadow: 0 0 7px rgba(99, 58, 253, 0.35);
+}
+
+.trafficdashboard_top_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.trafficdashboard_top_newdocument {
+    display: inline-block;
+    background: #5081fb;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 7px rgba(80, 130, 251, 0.63);
+    box-shadow: 0 0 7px rgba(80, 130, 251, 0.63);;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px;
+    margin-left: 20px;
+    white-space: nowrap
+}
+
+.trafficdashboard_item {
+    display: block;
+    width: 288px;
+    height: 192px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 11px 13px rgba(194, 200, 210, 0.42);
+    box-shadow: 0 11px 13px rgba(194, 200, 210, 0.42);
+    color: #fff;
+    padding: 20px 24px 0;
+    overflow: hidden;
+    margin: 6px;
+}
+
+.trafficdashboard_item_title {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-right: 20px;   
+}
+
+.trafficdashboard_item-menuopener {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.trafficdashboard_item-menuopener i {
+    font-size: 19px;
+    line-height: 19px;
+}
+
+.trafficdashboard_documents {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.trafficdashboard_document {
+    font-size: 14px;
+}
+
+.trafficdashboard_alllink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    margin: 0 -24px;
+    width: calc(100% + 48px);
+    padding: 0 24px;
+    height: 48px;
+    margin-top: 8px;
+}
+
+.trafficdashboard_item-invert {
+    color: #1d1d1e;
+}
+
+.trafficdashboard_item-invert .trafficdashboard_item-menuopener,
+.trafficdashboard_item-invert .trafficdashboard_document,
+.trafficdashboard_item-invert .trafficdashboard_today {
+    color: #b6b6c4;
+}
+
+.trafficdashboard_list {
+    width: calc(100% + 12px);
+    margin: 0 -6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.trafficdashboard_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.trafficdashboard_main {
+    padding: 0 36px;
+    width: calc(100% - 480px);
+}
+
+.trafficdashboard-rightpanel {
+    width: 480px;
+    border-left: 1px solid #dee1e8;
+    padding: 28px 24px;
+}
+
+.trafficdashboard_rightpanel-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #adadbd;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #e1e4eb;
+    width: calc(100% + 48px);
+    margin: 0 -24px;
+    padding: 14px 24px;
+}
+
+.trafficdashboard_rightpanel-item-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.trafficdashboard_rightpanel-item-filetype {
+    width: 32px;
+    height: 44px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.trafficdashboard_rightpanel-item-title {
+    font-size: 14px;
+}
+
+.trafficdashboard_rightpanel-item-text-aprover {
+    color: #b6b6c4;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.trafficdashboard_rightpanel-item-text-aprover span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 6px;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+.trafficdashboard_rightpanel-item-text-aprover span.success {
+    background: #00a453;
+    color: #fff;
+}
+
+.trafficdashboard_rightpanel-item-text-aprover span.alert {
+    background: #ff0000;
+    color: #fff;
+}
+
+.trafficdashboard_rightpanel-item-status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.trafficdashboard_rightpanel-item-status .status {
+    display: block;
+    position: relative;
+    padding-left: 18px;
+}
+
+.trafficdashboard_rightpanel-item-status .status:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.trafficdashboard_rightpanel-item-status .comleted {
+    color: #00a453;
+}
+
+.trafficdashboard_rightpanel-item-status .status.comleted:before {
+    background: #00a453
+}
+
+.trafficdashboard_rightpanel-item-status .alert {
+    color: #ff0000;
+}
+
+.trafficdashboard_rightpanel-item-status .status.alert:before {
+    background: #ff0000
+}
+
+.trafficdashboard_rightpanel-item_status {
+    font-size: 14px;
+}
+
+.trafficdashboard_rightpanel-item-result {
+    border: 1px solid #e1e4eb;
+    background: #f7f9fc;
+    font-size: 12px;
+    color: #b6b6c4;
+    line-height: 24px;
+    padding: 5px 15px
+}
+
+.trafficdashboard_rightpanel-item-result i {
+    font-size: 16px;
+    color: #00a453;
+    margin-right: 10px;
+}
+
+.trafficdashboard_rightpanel-item-uploaded {
+    font-size: 14px;
+    color: #b6b6c4;
+    border-top: 1px solid #e1e4eb;
+    border-bottom: 1px solid #e1e4eb;
+    width: calc(100% + 48px);
+    margin: 0 -24px;
+    padding: 16px 24px;
+}
+
+.trafficdashboard_rightpanel-item-uploaded span {
+    color: #3b3b3c;
+}
+
+.trafficdashboard_rightpanel-item {
+    padding: 30px 0 24px;
+}
+
+.trafficdashboard_item-add {
+    color: #1d1d1e;
+    text-align: center;    
+}
+
+.trafficdashboard_item-add i {
+    font-size: 89px;
+    display: block;
+}
+
+.trafficdashboard_top_buttons-mobile {
+    display: none;
+}
+
+.trafficdashboard_top .breadcrumbs-mobileprev {
+    position: static;
+    margin-right: 12px;
+}
+
+@media(max-width: 1439px) {
+    .trafficdashboard-rightpanel {
+        width: 288px;
+    }
+
+    .trafficdashboard_main {
+        width: calc(100% - 288px);
+    }
+}
+
+@media(max-width: 1279px) {
+    .trafficdashboard_main {
+        width: 100%
+    }
+
+    .trafficdashboard_top_buttons {
+        height: 36px;
+    }
+
+    .trafficdashboard_top_newdocument {
+        display: block;
+        font-weight: 400;
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+        margin-left: 0;
+        width: 36px;
+        background: transparent;
+        color: #adadbd;
+        text-align: center;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #e1e4eb;
+        background: url(../img/trafficdashboard_top_newdocument.png) no-repeat center / contain;
+        margin-left: 6px;
+    }
+
+    .trafficdashboard_top_newdocument span {
+        display: none;
+    }
+
+    .trafficdashboard_top_newdocument i {
+        position: relative;
+        top: -2px
+    }
+
+    .trafficdashboard_top-buttons {
+        position: relative;
+        height: 36px;
+        width: 218px;
+        z-index: 2;
+    }
+
+    .trafficdashboard_top_buttons ul {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #e1e4eb;
+    }
+
+    .trafficdashboard_top_buttons ul:before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 5px;
+        background: url(../img/trafficdashboard_top_buttons.png) no-repeat center / contain;
+        position: absolute;
+        right: 12px;
+        top: 14px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .trafficdashboard_top_buttons ul li {
+        margin-left: 0;
+        display: none;
+        padding-right: 24px;
+    }
+
+    .trafficdashboard_top_buttons ul.opened li,
+    .trafficdashboard_top_buttons ul li.active {
+        display: block;
+    }
+
+    .trafficdashboard_top_buttons ul li a {
+        border: none;
+        height: 34px
+    }
+
+    .trafficdashboard_top_buttons ul li.active a,
+    .trafficdashboard_top_buttons ul li a:hover {
+        color: #adadbd;
+        text-shadow: none;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .trafficdashboard_main {
+        padding: 0 24px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .trafficdashboard_list {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .trafficdashboard_top-buttons {
+        display: none
+    }
+    
+    .trafficdashboard_top_buttons-mobile{
+        display: block;
+        max-width: 288px;
+        width: 100%;
+        margin: 0 auto ;
+    }
+    
+    .trafficdashboard_top {
+        border-bottom: 1px solid #e1e4eb;
+        margin: 0 -24px 18px;;
+        width: calc(100% + 48px);
+        padding: 0 24px;
+    }
+    
+    .trafficdashboard_list {
+        padding: 12px 0;
+    }   
+}
+
+@media(max-width: 479px) {
+    .trafficdashboard_list {
+        padding: 12px 0;
+        width: 100%;
+        margin: 0;
+    } 
+    
+    .trafficdashboard_item {
+        width: 100%;
+        max-width: 288px;
+        margin: 6px 0;
+    }
+    
+    .trafficdashboard_top {
+        padding: 0 12px;
+    }
+}

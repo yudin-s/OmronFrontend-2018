@@ -1,0 +1,215 @@
+.category_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.category_page_panel {
+    width: 288px;
+    border-left: 1px solid #e1e4eb;
+    padding: 24px;
+    min-height: 100%;
+}
+
+.category_page_panel-buttons a {
+    width: 100%;
+}
+
+.category_page_panel-buttons a + a {
+    margin-top: 12px;
+}
+
+.category_page_panel-menu ul li a {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.category_page_panel-menu ul li i.ssgfont {
+    font-size: 21px;
+    margin-top: -6px;
+    width: 36px;
+    color: #adadbd;
+}
+
+.category_page_panel-menu ul li.active a,
+.category_page_panel-menu ul li a:hover,
+.category_page_panel-menu ul li a:hover i.ssgfont,
+.category_page_panel-menu ul li.active i.ssgfont {
+    color: #5081fb;
+}
+
+.category_page_panel-menu ul li + li {
+    margin-top: 18px;
+}
+
+.category_page_panel-menu {
+    padding: 64px 0
+}
+
+.category_page_main {
+    width: calc(100% - 288px);
+}
+
+.category_page-img-grid {
+    width: 1px
+}
+
+.category_page-images {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+}
+
+.category_page-img {
+    padding: 0 6px 12px;
+    max-width: 100%;
+    position: relative;
+}
+
+.category_page-img img {
+    max-height: 325px;
+    max-width: 100%;
+}
+
+.category_page-img-menu {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: rgba(29, 29, 30, 0.4);
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    opacity: 0
+}
+
+@media (pointer:coarse) {
+    .category_page-img-menu {
+        background: none;
+        opacity: 1
+    }
+}
+
+.category_page-img:hover .category_page-img-menu {
+    opacity: 1
+}
+
+.category_page-img-menu-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.category_page-img-menu-top-button {
+    display: block;
+    height: 24px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    min-width: 24px;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+
+.category_page-img-menu-top .checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.category_page-img-menu-top .checkbox span {
+    width: 24px;
+    height: 24px;
+}
+
+.category_page-img-menu-top .checkbox:before {
+    position: static;
+}
+
+.category_page-img-menu-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #1d1d1e;
+    padding: 13px 24px;
+    padding-right: 90px;
+
+}
+
+.category_page-img-menu-filename {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.category_page-img-menu-filesize {
+    color: #7f7f80;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.category_page-bottom-button {
+    display: block;
+    width: 66px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../img/category_page-bottom-button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #5081fb;
+}
+
+.dimagepagepanel_version_filemenu {
+    padding: 0 24px
+}
+
+@media(max-width: 1279px) {
+    .category_page {
+        display: block;
+    }
+
+    .category_page_main {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .category_page-img {
+        width: 100%;
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+
+    .category_page-img img {
+        width: 100%;
+        max-height: none
+    }
+}
+
+@media(max-width: 359px) {
+    .category_page_panel {
+        width: 240px;
+        padding: 24px 12px;
+    }
+}

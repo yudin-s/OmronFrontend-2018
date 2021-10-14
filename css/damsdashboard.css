@@ -1,0 +1,150 @@
+.damsdashboard {
+    padding-top: 120px;
+    padding-top: 11.11111vh;
+    padding-bottom: 120px;
+    padding-bottom: 11.11111vh;
+}
+
+.damsdashboard h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #4c5156;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 24px
+}
+
+.damsdashboard-title {
+    font-size: 18px;
+    line-height: 27px;
+    color: #4c5156;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.damsdashboard_form {
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 96px;
+    margin-top: 8.88888vh;
+    margin-bottom: 240px;
+    margin-bottom: 22.22222vh
+}
+
+.damsdashboard_form form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.damsdashboard_form-b {
+    border: 1px solid #cfd1d2;
+    -webkit-box-shadow: 0 11px 13px rgba(194, 200, 210, 0.26), 0 0 7px rgba(236, 239, 244, 0.35);
+    box-shadow: 0 11px 13px rgba(194, 200, 210, 0.26), 0 0 7px rgba(236, 239, 244, 0.35);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.damsdashboard_form form input {
+    padding: 0 24px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 60px;
+    font-size: 16px;
+}
+
+.damsdashboard_form form button {
+    display: block;
+    width: 144px;
+    height: 60px;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.damsdashboard_form form select {
+    height: 60px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none !important;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    background-color: #eceff4;
+    background-image: url(../img/damsdashboard_form.png);
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+    padding: 0 36px 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3d4d65;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-left: 1px solid #dce1e9;
+    border-radius: 0
+}
+
+.damsdashboard_form form select option {
+    font-size: 12px;
+    color: #3d4d65;
+}
+
+.damsdashboard_form_folders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-start
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media(max-width: 1023px) {
+    .damsdashboard {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .damsdashboard_form {
+        margin-bottom: 192px;
+    }
+}
+
+@media(max-width: 767px) {
+    .damsdashboard_form form {
+        display: block;
+    }
+
+    .damsdashboard_form form button {
+        margin-left: auto;
+        margin-top: 24px;
+        margin-right: auto
+    }
+
+    .damsdashboard_form {
+        margin-bottom: 96px;
+    }
+
+    .damsdashboard_form form input {
+        padding: 0 12px;
+        width: 1px
+    }
+}
